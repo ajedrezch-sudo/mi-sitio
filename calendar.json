@@ -1,0 +1,31 @@
+[
+    {
+        "id": 4,
+        "event": "circuito chubutense",
+        "title": "4° Abierto de Lago Puelo",
+        "date": "6 al 9 de Noviembre",
+        "description": "Con la presencia del GM Pepe Cuenca!.",
+        "link": "https://www.fachajedrez.com.ar/puelo/IRT"
+    },
+    {
+        "id": 2,
+        "event": "campeonatos chubutenses",
+        "title": "Campeonato Senior y  Absoluto",
+        "date": "Septiembre",
+        "description": "Prontamente más información."
+    },
+    {
+        "id": 3,
+        "event": "campeonatos chubutenses",
+        "title": "Campeonato femenino",
+        "date": "4 al 6 de octubre",
+        "description": "Prontamente más información."
+    },
+    {
+        "id": 5,
+        "event": "circuito chubutense",
+        "title": "5° Chubut Turistico",
+        "date": "18 al 21 de diciembre",
+        "description": "Prontamente más información."
+    }
+]

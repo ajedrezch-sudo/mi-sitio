@@ -1,0 +1,30 @@
+[
+    {
+        "titulo": "42° Abierto de Playa Unión",
+        "descripcion": "Eugenio Crespo se consagró campeón",
+        "imagen": "img/noticias/playa.png",
+        "detalle": "El flamante campeón fue el trelewense Eugenio Crespo, quien ganó cinco partidas y empató la restante. El subcampeón fue Martín Salamanca, con cinco unidades. Completó el podio el Maestro FIDE Andrés Aguilar, con cinco puntos, pero peor sistema de desempate. El cuarto puesto se lo llevó René Sommariva, de Trelew, y el quinto lugar fue para José María Derbes, representando a Mar de Ajó.",
+        "enlaces": [
+            {"texto": "Clasificación final", "url": "https://chess-results.com/tnr1104227.aspx?lan=2&art=1&rd=6&flag=30"},
+            {"texto": "Fotos del torneo", "url": "https://www.facebook.com/media/set/?vanity=ajedrezrw&set=a.1355417985433893"}
+        ]
+    },
+    {
+        "titulo": "Lanzamos el circuito Chubutense",
+        "descripcion": "",
+        "imagen": "img/noticias/circuito.png",
+        "detalle": "Desde la FACH nos complace anunciar la primera edición de este Grand Prix, compuesto por los abiertos internacionales más importantes de la provincia, donde los jugadores de Chubut competirán por el título del circuito 🏆",
+        "enlaces": [
+            {"texto": "Consulta el reglamento acá", "url": "https://docs.google.com/document/d/1RZYPDovzs0kobD1-tdv5wIiH_A_E0Tj0dc8vO3riGCE/"}
+        ]
+    },
+    {
+        "titulo": "Nuevo grupo de difusión",
+        "descripcion": "Únite a nuestro grupo de whatsapp",
+        "imagen": "img/noticias/difusion.png",
+        "detalle": "Recibí toda la info de torneos, noticias, actividades y sé parte de la comunidad ajedrecística de Chubut. 🏆",
+        "enlaces": [
+            {"texto": "Sumate ahora haciendo clic aquí", "url": "https://chat.whatsapp.com/JkIDQV7TD2vBc4yKpnT82D"}
+        ]
+    }
+]

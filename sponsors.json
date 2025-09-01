@@ -1,0 +1,18 @@
+[
+    {
+        "categoryName": "Global Sponsors",
+        "sponsors": [
+            { "name": "Global Sponsor 1", "image": "./img/sponsors/chess.png" },
+            { "name": "Global Sponsor 2", "image": "./img/sponsors/chessable.png" }
+        ]
+    },
+    {
+        "categoryName": "Local Sponsors",
+        "sponsors": [
+            { "name": "Local Sponsor 1", "image": "./img/sponsors/samsara.png" },
+            { "name": "Local Sponsor 2", "image": "./img/sponsors/laberinto.png" },
+            { "name": "Local Sponsor 2", "image": "./img/sponsors/Nautica.png" },
+            { "name": "Local Sponsor 2", "image": "./img/sponsors/latitud.png" }
+        ]
+    }
+]

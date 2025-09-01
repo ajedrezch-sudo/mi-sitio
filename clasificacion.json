@@ -1,0 +1,1667 @@
+[
+  {
+    "position": 1,
+    "name": "Crespo Eugenio",
+    "totalPoints": 30,
+    "tournaments": [
+      {
+        "name": "V Trelew Chess Open",
+        "points": 10,
+        "position": 1
+      },
+      {
+        "name": "Torneo de Playa Unión - Rawson - Chubut",
+        "points": 10,
+        "position": 1
+      },
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 10,
+        "position": 1
+      }
+    ],
+    "club": "Club Capablanca",
+    "elo": 2193,
+    "fideProfile": "https://ratings.fide.com/profile/120260"
+  },
+  {
+    "position": 2,
+    "name": "Aguilar Andres",
+    "totalPoints": 12,
+    "tournaments": [
+      {
+        "name": "V Trelew Chess Open",
+        "points": 6,
+        "position": 3
+      },
+      {
+        "name": "Torneo de Playa Unión - Rawson - Chubut",
+        "points": 6,
+        "position": 3
+      }
+    ],
+    "club": "El Mundo del Ajedrez",
+    "elo": 2281,
+    "fideProfile": "https://ratings.fide.com/profile/113514"
+  },
+  {
+    "position": 3,
+    "name": "Lucero Marzo Daniel",
+    "totalPoints": 10,
+    "tournaments": [
+      {
+        "name": "V Trelew Chess Open",
+        "points": 4,
+        "position": 5
+      },
+      {
+        "name": "Torneo de Playa Unión - Rawson - Chubut",
+        "points": 4,
+        "position": 8
+      },
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 2,
+        "position": 15
+      }
+    ],
+    "club": "Club de Ajedrez Lago Puelo",
+    "elo": 2033,
+    "fideProfile": "https://ratings.fide.com/profile/20003595"
+  },
+  {
+    "position": 4,
+    "name": "Sommariva Rene",
+    "totalPoints": 10,
+    "tournaments": [
+      {
+        "name": "V Trelew Chess Open",
+        "points": 2,
+        "position": 19
+      },
+      {
+        "name": "Torneo de Playa Unión - Rawson - Chubut",
+        "points": 4,
+        "position": 4
+      },
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 4,
+        "position": 6
+      }
+    ],
+    "club": "Club Capablanca",
+    "elo": 1938,
+    "fideProfile": "https://ratings.fide.com/profile/109797"
+  },
+  {
+    "position": 5,
+    "name": "Uzcudun Alfonso",
+    "totalPoints": 10,
+    "tournaments": [
+      {
+        "name": "V Trelew Chess Open",
+        "points": 4,
+        "position": 4
+      },
+      {
+        "name": "Torneo de Playa Unión - Rawson - Chubut",
+        "points": 2,
+        "position": 12
+      },
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 4,
+        "position": 7
+      }
+    ],
+    "club": "Club Capablanca",
+    "elo": 1767,
+    "fideProfile": "https://ratings.fide.com/profile/20027494"
+  },
+  {
+    "position": 6,
+    "name": "Prado Ignacio",
+    "totalPoints": 8,
+    "tournaments": [
+      {
+        "name": "V Trelew Chess Open",
+        "points": 8,
+        "position": 2
+      }
+    ],
+    "club": "Círculo de Ajedrez Rawson",
+    "elo": 1934,
+    "fideProfile": null
+  },
+  {
+    "position": 7,
+    "name": "Salamanca Martin",
+    "totalPoints": 8,
+    "tournaments": [
+      {
+        "name": "Torneo de Playa Unión - Rawson - Chubut",
+        "points": 8,
+        "position": 2
+      }
+    ],
+    "club": "El Mundo del Ajedrez",
+    "elo": 2153,
+    "fideProfile": "https://ratings.fide.com/profile/163589"
+  },
+  {
+    "position": 8,
+    "name": "Quinteros Omar",
+    "totalPoints": 8,
+    "tournaments": [
+      {
+        "name": "V Trelew Chess Open",
+        "points": 4,
+        "position": 6
+      },
+      {
+        "name": "Torneo de Playa Unión - Rawson - Chubut",
+        "points": 2,
+        "position": 20
+      },
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 2,
+        "position": 17
+      }
+    ],
+    "club": "El Mundo del Ajedrez",
+    "elo": 1829,
+    "fideProfile": "https://ratings.fide.com/profile/154415"
+  },
+  {
+    "position": 9,
+    "name": "Munoz Mauricio",
+    "totalPoints": 8,
+    "tournaments": [
+      {
+        "name": "V Trelew Chess Open",
+        "points": 4,
+        "position": 9
+      },
+      {
+        "name": "Torneo de Playa Unión - Rawson - Chubut",
+        "points": 2,
+        "position": 15
+      },
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 2,
+        "position": 40
+      }
+    ],
+    "club": "Club Capablanca",
+    "elo": 1833,
+    "fideProfile": "https://ratings.fide.com/profile/172154"
+  },
+  {
+    "position": 10,
+    "name": "Del Blanco Eduardo",
+    "totalPoints": 8,
+    "tournaments": [
+      {
+        "name": "Torneo de Playa Unión - Rawson - Chubut",
+        "points": 4,
+        "position": 6
+      },
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 4,
+        "position": 8
+      }
+    ],
+    "club": "Círculo de Ajedrez de Esquel",
+    "elo": 1931,
+    "fideProfile": "https://ratings.fide.com/profile/147052"
+  },
+  {
+    "position": 11,
+    "name": "Cicciari Teo Dante",
+    "totalPoints": 8,
+    "tournaments": [
+      {
+        "name": "Torneo de Playa Unión - Rawson - Chubut",
+        "points": 4,
+        "position": 9
+      },
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 4,
+        "position": 5
+      }
+    ],
+    "club": "Club de Ajedrez Lago Puelo",
+    "elo": 1954,
+    "fideProfile": "https://ratings.fide.com/profile/140821"
+  },
+  {
+    "position": 12,
+    "name": "Ipuche Andres",
+    "totalPoints": 8,
+    "tournaments": [
+      {
+        "name": "V Trelew Chess Open",
+        "points": 2,
+        "position": 21
+      },
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 6,
+        "position": 3
+      }
+    ],
+    "club": "Peones del Sur",
+    "elo": 1685,
+    "fideProfile": null
+  },
+  {
+    "position": 13,
+    "name": "Arias Juan Cruz",
+    "totalPoints": 8,
+    "tournaments": [
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 8,
+        "position": 2
+      }
+    ],
+    "club": "Peones del Sur",
+    "elo": 0,
+    "fideProfile": null
+  },
+  {
+    "position": 14,
+    "name": "Salinas Lautaro",
+    "totalPoints": 6,
+    "tournaments": [
+      {
+        "name": "V Trelew Chess Open",
+        "points": 2,
+        "position": 32
+      },
+      {
+        "name": "Torneo de Playa Unión - Rawson - Chubut",
+        "points": 4,
+        "position": 10
+      }
+    ],
+    "club": "Círculo de Ajedrez Rawson",
+    "elo": 1907,
+    "fideProfile": "https://ratings.fide.com/profile/140953"
+  },
+  {
+    "position": 15,
+    "name": "Jaramillo Walter",
+    "totalPoints": 6,
+    "tournaments": [
+      {
+        "name": "V Trelew Chess Open",
+        "points": 4,
+        "position": 10
+      },
+      {
+        "name": "Torneo de Playa Unión - Rawson - Chubut",
+        "points": 2,
+        "position": 18
+      }
+    ],
+    "club": "Club Capablanca",
+    "elo": 1895,
+    "fideProfile": "https://ratings.fide.com/profile/121991"
+  },
+  {
+    "position": 16,
+    "name": "Orellana Fuentes Alvaro Fernando",
+    "totalPoints": 6,
+    "tournaments": [
+      {
+        "name": "V Trelew Chess Open",
+        "points": 4,
+        "position": 7
+      },
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 2,
+        "position": 16
+      }
+    ],
+    "club": "Peones del Sur",
+    "elo": 1845,
+    "fideProfile": null
+  },
+  {
+    "position": 17,
+    "name": "Gerez Cesar Ariel",
+    "totalPoints": 6,
+    "tournaments": [
+      {
+        "name": "V Trelew Chess Open",
+        "points": 4,
+        "position": 8
+      },
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 2,
+        "position": 18
+      }
+    ],
+    "club": "Círculo de Ajedrez de Esquel",
+    "elo": 1837,
+    "fideProfile": null
+  },
+  {
+    "position": 18,
+    "name": "De Los Santos Jeremias",
+    "totalPoints": 6,
+    "tournaments": [
+      {
+        "name": "V Trelew Chess Open",
+        "points": 2,
+        "position": 23
+      },
+      {
+        "name": "Torneo de Playa Unión - Rawson - Chubut",
+        "points": 2,
+        "position": 11
+      },
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 2,
+        "position": 23
+      }
+    ],
+    "club": "Club Capablanca",
+    "elo": 1805,
+    "fideProfile": "https://ratings.fide.com/profile/20025050"
+  },
+  {
+    "position": 19,
+    "name": "Laurin Ramiro",
+    "totalPoints": 6,
+    "tournaments": [
+      {
+        "name": "V Trelew Chess Open",
+        "points": 2,
+        "position": 12
+      },
+      {
+        "name": "Torneo de Playa Unión - Rawson - Chubut",
+        "points": 2,
+        "position": 13
+      },
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 2,
+        "position": 19
+      }
+    ],
+    "club": "Club Capablanca",
+    "elo": 1863,
+    "fideProfile": "https://ratings.fide.com/profile/20027478"
+  },
+  {
+    "position": 20,
+    "name": "Sierra Walter Damian",
+    "totalPoints": 6,
+    "tournaments": [
+      {
+        "name": "V Trelew Chess Open",
+        "points": 2,
+        "position": 14
+      },
+      {
+        "name": "Torneo de Playa Unión - Rawson - Chubut",
+        "points": 2,
+        "position": 22
+      },
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 2,
+        "position": 21
+      }
+    ],
+    "club": "Trevelin",
+    "elo": 1755,
+    "fideProfile": "https://ratings.fide.com/profile/20029225"
+  },
+  {
+    "position": 21,
+    "name": "Pistone Mateo",
+    "totalPoints": 6,
+    "tournaments": [
+      {
+        "name": "V Trelew Chess Open",
+        "points": 2,
+        "position": 15
+      },
+      {
+        "name": "Torneo de Playa Unión - Rawson - Chubut",
+        "points": 2,
+        "position": 37
+      },
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 2,
+        "position": 29
+      }
+    ],
+    "club": "Club Capablanca",
+    "elo": 1549,
+    "fideProfile": "https://ratings.fide.com/profile/20045263"
+  },
+  {
+    "position": 22,
+    "name": "Barrera Ricardo",
+    "totalPoints": 6,
+    "tournaments": [
+      {
+        "name": "V Trelew Chess Open",
+        "points": 2,
+        "position": 24
+      },
+      {
+        "name": "Torneo de Playa Unión - Rawson - Chubut",
+        "points": 2,
+        "position": 28
+      },
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 2,
+        "position": 44
+      }
+    ],
+    "club": "Peones del Sur",
+    "elo": 1591,
+    "fideProfile": "https://ratings.fide.com/profile/20050763"
+  },
+  {
+    "position": 23,
+    "name": "Loskin Camilo",
+    "totalPoints": 6,
+    "tournaments": [
+      {
+        "name": "V Trelew Chess Open",
+        "points": 2,
+        "position": 31
+      },
+      {
+        "name": "Torneo de Playa Unión - Rawson - Chubut",
+        "points": 2,
+        "position": 33
+      },
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 2,
+        "position": 20
+      }
+    ],
+    "club": "Club Capablanca",
+    "elo": 1535,
+    "fideProfile": "https://ratings.fide.com/profile/20025106"
+  },
+  {
+    "position": 24,
+    "name": "Reinoso Jeremias",
+    "totalPoints": 6,
+    "tournaments": [
+      {
+        "name": "V Trelew Chess Open",
+        "points": 2,
+        "position": 29
+      },
+      {
+        "name": "Torneo de Playa Unión - Rawson - Chubut",
+        "points": 2,
+        "position": 24
+      },
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 2,
+        "position": 49
+      }
+    ],
+    "club": "Club de Ajedrez El Hoyo",
+    "elo": 1523,
+    "fideProfile": "https://ratings.fide.com/profile/20026358"
+  },
+  {
+    "position": 25,
+    "name": "Iribarren Imanol",
+    "totalPoints": 6,
+    "tournaments": [
+      {
+        "name": "V Trelew Chess Open",
+        "points": 2,
+        "position": 33
+      },
+      {
+        "name": "Torneo de Playa Unión - Rawson - Chubut",
+        "points": 2,
+        "position": 40
+      },
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 2,
+        "position": 43
+      }
+    ],
+    "club": "Círculo de Ajedrez Rawson",
+    "elo": 0,
+    "fideProfile": "https://ratings.fide.com/profile/20047592"
+  },
+  {
+    "position": 26,
+    "name": "Nock Pablo",
+    "totalPoints": 4,
+    "tournaments": [
+      {
+        "name": "V Trelew Chess Open",
+        "points": 2,
+        "position": 20
+      },
+      {
+        "name": "Torneo de Playa Unión - Rawson - Chubut",
+        "points": 2,
+        "position": 16
+      }
+    ],
+    "club": "Club Capablanca",
+    "elo": 1796,
+    "fideProfile": "https://ratings.fide.com/profile/172030"
+  },
+  {
+    "position": 27,
+    "name": "Ventura Ignacio",
+    "totalPoints": 4,
+    "tournaments": [
+      {
+        "name": "V Trelew Chess Open",
+        "points": 2,
+        "position": 17
+      },
+      {
+        "name": "Torneo de Playa Unión - Rawson - Chubut",
+        "points": 2,
+        "position": 27
+      }
+    ],
+    "club": "Club Capablanca",
+    "elo": 1627,
+    "fideProfile": "https://ratings.fide.com/profile/20045263"
+  },
+  {
+    "position": 28,
+    "name": "Huichulef Enzo",
+    "totalPoints": 4,
+    "tournaments": [
+      {
+        "name": "V Trelew Chess Open",
+        "points": 2,
+        "position": 18
+      },
+      {
+        "name": "Torneo de Playa Unión - Rawson - Chubut",
+        "points": 2,
+        "position": 26
+      }
+    ],
+    "club": "Club Capablanca",
+    "elo": 1692,
+    "fideProfile": "https://ratings.fide.com/profile/172138"
+  },
+  {
+    "position": 29,
+    "name": "Baliente Joaquin",
+    "totalPoints": 4,
+    "tournaments": [
+      {
+        "name": "V Trelew Chess Open",
+        "points": 2,
+        "position": 27
+      },
+      {
+        "name": "Torneo de Playa Unión - Rawson - Chubut",
+        "points": 2,
+        "position": 38
+      }
+    ],
+    "club": "Círculo de Ajedrez de Esquel",
+    "elo": 0,
+    "fideProfile": "https://ratings.fide.com/profile/0"
+  },
+  {
+    "position": 31,
+    "name": "Pirola Marcos",
+    "totalPoints": 4,
+    "tournaments": [
+      {
+        "name": "Torneo de Playa Unión - Rawson - Chubut",
+        "points": 4,
+        "position": 7
+      }
+    ],
+    "club": "Club Capablanca",
+    "elo": 2058,
+    "fideProfile": "https://ratings.fide.com/profile/120324"
+  },
+  {
+    "position": 32,
+    "name": "Etchechoury Julian Andres",
+    "totalPoints": 4,
+    "tournaments": [
+      {
+        "name": "V Trelew Chess Open",
+        "points": 2,
+        "position": 13
+      },
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 2,
+        "position": 30
+      }
+    ],
+    "club": "Club Capablanca",
+    "elo": 1673,
+    "fideProfile": null
+  },
+  {
+    "position": 33,
+    "name": "Insley Kiara",
+    "totalPoints": 4,
+    "tournaments": [
+      {
+        "name": "V Trelew Chess Open",
+        "points": 2,
+        "position": 20
+      },
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 2,
+        "position": 42
+      }
+    ],
+    "club": "Club Capablanca",
+    "elo": 1668,
+    "fideProfile": null
+  },
+  {
+    "position": 34,
+    "name": "Lopez Tilleria Luka",
+    "totalPoints": 4,
+    "tournaments": [
+      {
+        "name": "V Trelew Chess Open",
+        "points": 2,
+        "position": 40
+      },
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 2,
+        "position": 50
+      }
+    ],
+    "club": "Club Capablanca",
+    "elo": 1496,
+    "fideProfile": null
+  },
+  {
+    "position": 35,
+    "name": "Fernandez Carlos",
+    "totalPoints": 4,
+    "tournaments": [
+      {
+        "name": "V Trelew Chess Open",
+        "points": 2,
+        "position": 41
+      },
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 2,
+        "position": 52
+      }
+    ],
+    "club": "Club Capablanca",
+    "elo": 0,
+    "fideProfile": null
+  },
+  {
+    "position": 36,
+    "name": "Lopez Jose Luis",
+    "totalPoints": 4,
+    "tournaments": [
+      {
+        "name": "Torneo de Playa Unión - Rawson - Chubut",
+        "points": 2,
+        "position": 14
+      },
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 2,
+        "position": 47
+      }
+    ],
+    "club": "Peones del Sur",
+    "elo": 1796,
+    "fideProfile": "https://ratings.fide.com/profile/110299"
+  },
+  {
+    "position": 37,
+    "name": "Oldani Homero",
+    "totalPoints": 4,
+    "tournaments": [
+      {
+        "name": "Torneo de Playa Unión - Rawson - Chubut",
+        "points": 2,
+        "position": 17
+      },
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 2,
+        "position": 12
+      }
+    ],
+    "club": "Peones del Sur",
+    "elo": 1714,
+    "fideProfile": "https://ratings.fide.com/profile/172138"
+  },
+  {
+    "position": 38,
+    "name": "Musumeci Ricardo",
+    "totalPoints": 4,
+    "tournaments": [
+      {
+        "name": "Torneo de Playa Unión - Rawson - Chubut",
+        "points": 2,
+        "position": 21
+      },
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 2,
+        "position": 39
+      }
+    ],
+    "club": "El Mundo del Ajedrez",
+    "elo": 1739,
+    "fideProfile": "https://ratings.fide.com/profile/198420"
+  },
+  {
+    "position": 39,
+    "name": "Cicciari Ricardo Miguel",
+    "totalPoints": 4,
+    "tournaments": [
+      {
+        "name": "Torneo de Playa Unión - Rawson - Chubut",
+        "points": 2,
+        "position": 23
+      },
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 2,
+        "position": 28
+      }
+    ],
+    "club": "Club de Ajedrez Lago Puelo",
+    "elo": 1687,
+    "fideProfile": "https://ratings.fide.com/profile/155136"
+  },
+  {
+    "position": 40,
+    "name": "Conde Alberto Jose Luis",
+    "totalPoints": 4,
+    "tournaments": [
+      {
+        "name": "Torneo de Playa Unión - Rawson - Chubut",
+        "points": 2,
+        "position": 29
+      },
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 2,
+        "position": 27
+      }
+    ],
+    "club": "Club de Ajedrez Lago Puelo",
+    "elo": 1596,
+    "fideProfile": "https://ratings.fide.com/profile/20020848"
+  },
+  {
+    "position": 41,
+    "name": "Mena Eugenio",
+    "totalPoints": 4,
+    "tournaments": [
+      {
+        "name": "Torneo de Playa Unión - Rawson - Chubut",
+        "points": 2,
+        "position": 31
+      },
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 2,
+        "position": 38
+      }
+    ],
+    "club": "Peones del Sur",
+    "elo": 1636,
+    "fideProfile": "https://ratings.fide.com/profile/20025122"
+  },
+  {
+    "position": 42,
+    "name": "Bustos Pedro",
+    "totalPoints": 4,
+    "tournaments": [
+      {
+        "name": "Torneo de Playa Unión - Rawson - Chubut",
+        "points": 2,
+        "position": 34
+      },
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 2,
+        "position": 32
+      }
+    ],
+    "club": "El Mundo del Ajedrez",
+    "elo": 1639,
+    "fideProfile": "https://ratings.fide.com/profile/139203"
+  },
+  {
+    "position": 43,
+    "name": "Huenelaf Enzo",
+    "totalPoints": 4,
+    "tournaments": [
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 4,
+        "position": 4
+      }
+    ],
+    "club": "Club de Ajedrez Lago Puelo",
+    "elo": 0,
+    "fideProfile": null
+  },
+  {
+    "position": 44,
+    "name": "Muruchi Machaca Adrian Hernan",
+    "totalPoints": 4,
+    "tournaments": [
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 4,
+        "position": 9
+      }
+    ],
+    "club": "El Mundo del Ajedrez",
+    "elo": 0,
+    "fideProfile": null
+  },
+  {
+    "position": 45,
+    "name": "Sabas Jorge",
+    "totalPoints": 4,
+    "tournaments": [
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 4,
+        "position": 10
+      }
+    ],
+    "club": "Peones del Sur",
+    "elo": 0,
+    "fideProfile": null
+  },
+  {
+    "position": 46,
+    "name": "Rossi Geronimo",
+    "totalPoints": 2,
+    "tournaments": [
+      {
+        "name": "V Trelew Chess Open",
+        "points": 2,
+        "position": 11
+      }
+    ],
+    "club": "Círculo de Ajedrez de Esquel",
+    "elo": 1913,
+    "fideProfile": null
+  },
+  {
+    "position": 47,
+    "name": "Chiquichano Facundo",
+    "totalPoints": 2,
+    "tournaments": [
+      {
+        "name": "V Trelew Chess Open",
+        "points": 2,
+        "position": 22
+      }
+    ],
+    "club": "Club Capablanca",
+    "elo": 1516,
+    "fideProfile": null
+  },
+  {
+    "position": 48,
+    "name": "Moreno Lucas",
+    "totalPoints": 2,
+    "tournaments": [
+      {
+        "name": "V Trelew Chess Open",
+        "points": 2,
+        "position": 25
+      }
+    ],
+    "club": "Club Capablanca",
+    "elo": 1595,
+    "fideProfile": null
+  },
+  {
+    "position": 49,
+    "name": "Harriet German",
+    "totalPoints": 2,
+    "tournaments": [
+      {
+        "name": "V Trelew Chess Open",
+        "points": 2,
+        "position": 26
+      }
+    ],
+    "club": "El Mundo del Ajedrez",
+    "elo": 1797,
+    "fideProfile": null
+  },
+  {
+    "position": 50,
+    "name": "Oreda Emilio",
+    "totalPoints": 2,
+    "tournaments": [
+      {
+        "name": "V Trelew Chess Open",
+        "points": 2,
+        "position": 28
+      }
+    ],
+    "club": "Club Capablanca",
+    "elo": 0,
+    "fideProfile": null
+  },
+  {
+    "position": 51,
+    "name": "Castillo Dylan",
+    "totalPoints": 2,
+    "tournaments": [
+      {
+        "name": "V Trelew Chess Open",
+        "points": 2,
+        "position": 30
+      }
+    ],
+    "club": "Club Capablanca",
+    "elo": 1479,
+    "fideProfile": null
+  },
+  {
+    "position": 52,
+    "name": "Pilquiman Enzo",
+    "totalPoints": 2,
+    "tournaments": [
+      {
+        "name": "V Trelew Chess Open",
+        "points": 2,
+        "position": 34
+      }
+    ],
+    "club": "Club Capablanca",
+    "elo": 1753,
+    "fideProfile": null
+  },
+  {
+    "position": 53,
+    "name": "Chavez Alejandro",
+    "totalPoints": 2,
+    "tournaments": [
+      {
+        "name": "V Trelew Chess Open",
+        "points": 2,
+        "position": 35
+      }
+    ],
+    "club": "Círculo de Ajedrez Rawson",
+    "elo": 0,
+    "fideProfile": null
+  },
+  {
+    "position": 54,
+    "name": "Maldonado Ian Joel",
+    "totalPoints": 2,
+    "tournaments": [
+      {
+        "name": "V Trelew Chess Open",
+        "points": 2,
+        "position": 36
+      }
+    ],
+    "club": "Club Capablanca",
+    "elo": 0,
+    "fideProfile": null
+  },
+  {
+    "position": 55,
+    "name": "Ruiz Diaz Victor",
+    "totalPoints": 2,
+    "tournaments": [
+      {
+        "name": "V Trelew Chess Open",
+        "points": 2,
+        "position": 37
+      }
+    ],
+    "club": "Círculo de Ajedrez Rawson",
+    "elo": 1777,
+    "fideProfile": null
+  },
+  {
+    "position": 56,
+    "name": "Munoz Luciano",
+    "totalPoints": 2,
+    "tournaments": [
+      {
+        "name": "V Trelew Chess Open",
+        "points": 2,
+        "position": 38
+      }
+    ],
+    "club": "Club Capablanca",
+    "elo": 1472,
+    "fideProfile": null
+  },
+  {
+    "position": 57,
+    "name": "Gallardo Santino",
+    "totalPoints": 2,
+    "tournaments": [
+      {
+        "name": "V Trelew Chess Open",
+        "points": 2,
+        "position": 39
+      }
+    ],
+    "club": "Club Capablanca",
+    "elo": 0,
+    "fideProfile": null
+  },
+  {
+    "position": 58,
+    "name": "Martinez Luana",
+    "totalPoints": 2,
+    "tournaments": [
+      {
+        "name": "V Trelew Chess Open",
+        "points": 2,
+        "position": 42
+      }
+    ],
+    "club": "Club Capablanca",
+    "elo": 0,
+    "fideProfile": null
+  },
+  {
+    "position": 59,
+    "name": "Leon Ian",
+    "totalPoints": 2,
+    "tournaments": [
+      {
+        "name": "V Trelew Chess Open",
+        "points": 2,
+        "position": 43
+      }
+    ],
+    "club": "Club Capablanca",
+    "elo": 0,
+    "fideProfile": null
+  },
+  {
+    "position": 60,
+    "name": "Enrique Julian",
+    "totalPoints": 2,
+    "tournaments": [
+      {
+        "name": "V Trelew Chess Open",
+        "points": 2,
+        "position": 44
+      }
+    ],
+    "club": "Club Capablanca",
+    "elo": 0,
+    "fideProfile": null
+  },
+  {
+    "position": 61,
+    "name": "Oliveri Jairo",
+    "totalPoints": 2,
+    "tournaments": [
+      {
+        "name": "Torneo de Playa Unión - Rawson - Chubut",
+        "points": 2,
+        "position": 19
+      }
+    ],
+    "club": "Club de Ajedrez Lago Puelo",
+    "elo": 1916,
+    "fideProfile": "https://ratings.fide.com/profile/20025254"
+  },
+  {
+    "position": 62,
+    "name": "Ardiles Alfredo",
+    "totalPoints": 2,
+    "tournaments": [
+      {
+        "name": "Torneo de Playa Unión - Rawson - Chubut",
+        "points": 2,
+        "position": 25
+      }
+    ],
+    "club": "Club Capablanca",
+    "elo": 1738,
+    "fideProfile": "https://ratings.fide.com/profile/147001"
+  },
+  {
+    "position": 63,
+    "name": "Bondino Gaston",
+    "totalPoints": 2,
+    "tournaments": [
+      {
+        "name": "Torneo de Playa Unión - Rawson - Chubut",
+        "points": 2,
+        "position": 30
+      }
+    ],
+    "club": "Club Capablanca",
+    "elo": 1549,
+    "fideProfile": "https://ratings.fide.com/profile/195308"
+  },
+  {
+    "position": 64,
+    "name": "Torres Eliseo",
+    "totalPoints": 2,
+    "tournaments": [
+      {
+        "name": "Torneo de Playa Unión - Rawson - Chubut",
+        "points": 2,
+        "position": 32
+      }
+    ],
+    "club": "Círculo de Ajedrez de Esquel",
+    "elo": 1594,
+    "fideProfile": "https://ratings.fide.com/profile/20004931"
+  },
+  {
+    "position": 65,
+    "name": "Czabanyi Sergio",
+    "totalPoints": 2,
+    "tournaments": [
+      {
+        "name": "Torneo de Playa Unión - Rawson - Chubut",
+        "points": 2,
+        "position": 35
+      }
+    ],
+    "club": "Círculo de Ajedrez Rawson",
+    "elo": 1643,
+    "fideProfile": "https://ratings.fide.com/profile/153303"
+  },
+  {
+    "position": 66,
+    "name": "Baudes Jorge",
+    "totalPoints": 2,
+    "tournaments": [
+      {
+        "name": "Torneo de Playa Unión - Rawson - Chubut",
+        "points": 2,
+        "position": 36
+      }
+    ],
+    "club": "Círculo de Ajedrez Rawson",
+    "elo": 1656,
+    "fideProfile": "https://ratings.fide.com/profile/181781"
+  },
+  {
+    "position": 67,
+    "name": "Sanchez Rafael Sandro",
+    "totalPoints": 2,
+    "tournaments": [
+      {
+        "name": "Torneo de Playa Unión - Rawson - Chubut",
+        "points": 2,
+        "position": 39
+      }
+    ],
+    "club": "Club de Ajedrez El Hoyo",
+    "elo": 1495,
+    "fideProfile": "https://ratings.fide.com/profile/20026366"
+  },
+  {
+    "position": 68,
+    "name": "Arispe Camacho Romina",
+    "totalPoints": 2,
+    "tournaments": [
+      {
+        "name": "Torneo de Playa Unión - Rawson - Chubut",
+        "points": 2,
+        "position": 41
+      }
+    ],
+    "club": "Peones del Sur",
+    "elo": 0,
+    "fideProfile": "https://ratings.fide.com/profile/0"
+  },
+  {
+    "position": 69,
+    "name": "Aguinaga Maximiliano",
+    "totalPoints": 2,
+    "tournaments": [
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 2,
+        "position": 11
+      }
+    ],
+    "club": "El Mundo del Ajedrez",
+    "elo": 0,
+    "fideProfile": null
+  },
+  {
+    "position": 70,
+    "name": "Alvarez Ernesto",
+    "totalPoints": 2,
+    "tournaments": [
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 2,
+        "position": 13
+      }
+    ],
+    "club": "Círculo de Ajedrez de Esquel",
+    "elo": 0,
+    "fideProfile": null
+  },
+  {
+    "position": 71,
+    "name": "Romero Joaquin",
+    "totalPoints": 2,
+    "tournaments": [
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 2,
+        "position": 14
+      }
+    ],
+    "club": "Peones del Sur",
+    "elo": 0,
+    "fideProfile": null
+  },
+  {
+    "position": 72,
+    "name": "Sardon Matos Ignacio",
+    "totalPoints": 2,
+    "tournaments": [
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 2,
+        "position": 22
+      }
+    ],
+    "club": "Peones del Sur",
+    "elo": 0,
+    "fideProfile": null
+  },
+  {
+    "position": 73,
+    "name": "Soto Santino",
+    "totalPoints": 2,
+    "tournaments": [
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 2,
+        "position": 24
+      }
+    ],
+    "club": "Peones del Sur",
+    "elo": 0,
+    "fideProfile": null
+  },
+  {
+    "position": 74,
+    "name": "Alonso Sergio",
+    "totalPoints": 2,
+    "tournaments": [
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 2,
+        "position": 25
+      }
+    ],
+    "club": "El Mundo del Ajedrez",
+    "elo": 0,
+    "fideProfile": null
+  },
+  {
+    "position": 75,
+    "name": "Cortes Jose Luis",
+    "totalPoints": 2,
+    "tournaments": [
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 2,
+        "position": 26
+      }
+    ],
+    "club": "Peones del Sur",
+    "elo": 0,
+    "fideProfile": null
+  },
+  {
+    "position": 76,
+    "name": "Alfonso Felipe",
+    "totalPoints": 2,
+    "tournaments": [
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 2,
+        "position": 31
+      }
+    ],
+    "club": "Peones del Sur",
+    "elo": 0,
+    "fideProfile": null
+  },
+  {
+    "position": 77,
+    "name": "Maldonado Jaime",
+    "totalPoints": 2,
+    "tournaments": [
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 2,
+        "position": 33
+      }
+    ],
+    "club": "Peones del Sur",
+    "elo": 0,
+    "fideProfile": null
+  },
+  {
+    "position": 78,
+    "name": "Lapitzondo Santiago",
+    "totalPoints": 2,
+    "tournaments": [
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 2,
+        "position": 34
+      }
+    ],
+    "club": "Club de Ajedrez Lago Puelo",
+    "elo": 0,
+    "fideProfile": null
+  },
+  {
+    "position": 79,
+    "name": "Blanco Sebastian",
+    "totalPoints": 2,
+    "tournaments": [
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 2,
+        "position": 35
+      }
+    ],
+    "club": "Peones del Sur",
+    "elo": 0,
+    "fideProfile": null
+  },
+  {
+    "position": 80,
+    "name": "Barrionuevo Martin",
+    "totalPoints": 2,
+    "tournaments": [
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 2,
+        "position": 36
+      }
+    ],
+    "club": "Peones del Sur",
+    "elo": 0,
+    "fideProfile": null
+  },
+  {
+    "position": 81,
+    "name": "Aranea Leonel",
+    "totalPoints": 2,
+    "tournaments": [
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 2,
+        "position": 37
+      }
+    ],
+    "club": "El Mundo del Ajedrez",
+    "elo": 0,
+    "fideProfile": null
+  },
+  {
+    "position": 82,
+    "name": "Sarno Schonhoff Teo",
+    "totalPoints": 2,
+    "tournaments": [
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 2,
+        "position": 41
+      }
+    ],
+    "club": "Club de Ajedrez Lago Puelo",
+    "elo": 0,
+    "fideProfile": null
+  },
+  {
+    "position": 83,
+    "name": "Leyez Hernan Ariel",
+    "totalPoints": 2,
+    "tournaments": [
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 2,
+        "position": 45
+      }
+    ],
+    "club": "Club de Ajedrez Lago Puelo",
+    "elo": 0,
+    "fideProfile": null
+  },
+  {
+    "position": 84,
+    "name": "Gutierrez Benjamin",
+    "totalPoints": 2,
+    "tournaments": [
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 2,
+        "position": 46
+      }
+    ],
+    "club": "Peones del Sur",
+    "elo": 0,
+    "fideProfile": null
+  },
+  {
+    "position": 85,
+    "name": "Gomez Puma Daniel",
+    "totalPoints": 2,
+    "tournaments": [
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 2,
+        "position": 48
+      }
+    ],
+    "club": "Peones del Sur",
+    "elo": 0,
+    "fideProfile": null
+  },
+  {
+    "position": 86,
+    "name": "Zalaya Ivo",
+    "totalPoints": 2,
+    "tournaments": [
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 2,
+        "position": 51
+      }
+    ],
+    "club": "El Mundo del Ajedrez",
+    "elo": 0,
+    "fideProfile": null
+  },
+  {
+    "position": 87,
+    "name": "Marquina Osmar",
+    "totalPoints": 2,
+    "tournaments": [
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 2,
+        "position": 53
+      }
+    ],
+    "club": "El Mundo del Ajedrez",
+    "elo": 0,
+    "fideProfile": null
+  },
+  {
+    "position": 88,
+    "name": "Garcia Gaspar",
+    "totalPoints": 2,
+    "tournaments": [
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 2,
+        "position": 54
+      }
+    ],
+    "club": "Gaiman",
+    "elo": 0,
+    "fideProfile": null
+  },
+  {
+    "position": 89,
+    "name": "Millan Llanka",
+    "totalPoints": 2,
+    "tournaments": [
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 2,
+        "position": 55
+      }
+    ],
+    "club": "Círculo de Ajedrez de Esquel",
+    "elo": 0,
+    "fideProfile": null
+  },
+  {
+    "position": 90,
+    "name": "Lobo Samuel",
+    "totalPoints": 2,
+    "tournaments": [
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 2,
+        "position": 56
+      }
+    ],
+    "club": "Peones del Sur",
+    "elo": 0,
+    "fideProfile": null
+  },
+  {
+    "position": 91,
+    "name": "Gonzalez Carlos",
+    "totalPoints": 2,
+    "tournaments": [
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 2,
+        "position": 57
+      }
+    ],
+    "club": "Club de Ajedrez Lago Puelo",
+    "elo": 0,
+    "fideProfile": null
+  },
+  {
+    "position": 92,
+    "name": "Ocampo Dante",
+    "totalPoints": 2,
+    "tournaments": [
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 2,
+        "position": 58
+      }
+    ],
+    "club": "Peones del Sur",
+    "elo": 0,
+    "fideProfile": null
+  },
+  {
+    "position": 93,
+    "name": "Lopez Hector Adrian",
+    "totalPoints": 2,
+    "tournaments": [
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 2,
+        "position": 59
+      }
+    ],
+    "club": "Peones del Sur",
+    "elo": 0,
+    "fideProfile": null
+  },
+  {
+    "position": 94,
+    "name": "Lopez Morgan Isidro",
+    "totalPoints": 2,
+    "tournaments": [
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 2,
+        "position": 60
+      }
+    ],
+    "club": "Peones del Sur",
+    "elo": 0,
+    "fideProfile": null
+  },
+  {
+    "position": 95,
+    "name": "Cocco Siwonia Gian Pietro",
+    "totalPoints": 2,
+    "tournaments": [
+      {
+        "name": "Abierto de Madryn - Puerto Madryn",
+        "points": 2,
+        "position": 61
+      }
+    ],
+    "club": "Peones del Sur",
+    "elo": 0,
+    "fideProfile": null
+  }
+]

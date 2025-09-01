@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna&display=swap');
+
+:root {
+    --font-players: "Playwrite IT Moderna", cursive;
+}
+  
+section {
+    scroll-margin-top: 69px; /* Ajusta este valor según la altura del navbar */
+}
+
+.hover-effect {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hover-effect:hover {
+    transform: scale(1.4);
+    opacity: 0.85;
+}
+
+.blue-background{
+    background-color: #004280;
+}
+
+.sponsor-card img {
+    max-width: 150px;
+    margin: 15px;
+    transition: transform 0.3s ease;
+}
+.sponsor-card img:hover {
+    transform: scale(1.1);
+}
+
+.navbar {
+    background: #022647ed; /* Azul oscuro semitransparente */
+    padding: 10px 10px; /* Espaciado interno */
+}
+
+
+@media (min-width: 768px) { /* Aplica solo en tablets y pantallas más grandes */
+    .navbar {
+        padding: 5px 10px; /* Espaciado interno */
+    }
+}
+
+.nav-link {
+    color: white;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+#about {
+    background-color: #004586;
+    color: #dce0df;
+}
+
+.news-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.news-card img {
+    height: 200px;
+    object-fit: cover;
+}
+.text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.sponsor-logo {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.sponsor-logo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.sponsor-logo img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333333;
+}
+
+.lead{
+    font-style: italic;
+}
+
+.form-licencia {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #444444;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4f6bce;
+    box-shadow: 0 0 5px rgba(79, 107, 206, 0.5);
+}
+
+.btn-primary {
+    padding: 10px 20px;
+    background-color: #4f6bce;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+}
+
+.btn-yellow{
+    background-color: #FFAB4B;
+    color: black;
+    padding: 10px 20px !important;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.btn-yellow:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    color: #000;
+}
+
+.btn-primary:hover {
+    background-color: #819dfe;
+}
+
+@media (max-width: 768px) {
+    .modal-content {
+        border-radius: 0;  /* Quita bordes redondeados */
+    }
+    .modal-body {
+        padding: 20px;  /* Más espacio en el modal */
+    }
+    .modal-header {
+        padding: 15px;
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: transform 0.3s ease;
+    height: 100%; /* Asegura que las tarjetas tengan la misma altura */
+    text-align: center; /* Alinea el contenido al final */
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Espacia los elementos */
+    flex-grow: 1; /* Permite que el contenido principal ocupe el espacio disponible */
+    padding: 0.75rem 1rem;
+    margin: 0;
+    align-items: center; /* Centra el contenido verticalmente */
+    justify-content: center; /* Centra el contenido horizontalmente (opcional) */
+    text-align: center;
+}
+
+.card-footer {
+    margin-top: auto; /* Empuja el footer al fondo de la tarjeta */
+}
+
+.card-title {
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    margin-bottom: 0rem; /* Reduce el margen inferior */
+}
+
+/* Ajustes para pantallas grandes */
+@media (min-width: 992px) {
+    .card {
+        margin-bottom: 1rem; /* Asegura un buen espacio entre tarjetas */
+    }
+
+    #calendarContainer .col {
+        max-width: 250px; /* Ancho máximo para las tarjetas */
+    }
+
+    #calendarContainer {
+        justify-content: center; /* Centra las tarjetas si no ocupan todo el espacio */
+        gap: 1.5rem; /* Espaciado entre tarjetas */
+    }
+}
+
+.modal-content {
+    border-radius: 8px;
+}
+
+#tournamentModal ul {
+    padding-left: 0;
+}
+
+#tournamentModal ul li {
+    margin-bottom: 0.5rem;
+}
+
+.timeline-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+}
+
+.timeline-card {
+    border-left: 4px solid #0d6efd;
+    background-color: #f3f3f3;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.timeline-card:hover {
+    transform: scale(1.02);
+}
+
+.timeline-card h5 {
+    margin-bottom: 8px;
+}
+.timeline-card p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.circuito-chubutense{
+    border-left: 4px solid #FFAB4B;
+}
+.campeonatos-chubutenses{
+    border-left: 4px solid #004586;
+}
+
+.custom-accordion-btn:not(.collapsed),
+.custom-accordion-btn:focus {
+    background-color: #ffffff !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+.accordion-button:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.autoShow {
+    animation: autoShowAnimation both;
+    animation-timeline: view(70% 5%);
+}
+@keyframes autoShowAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(200px) scale(0.3);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+    
+}
+
+.autoBlur{
+    animation: autoBlurAnimation both;
+    animation-timeline: view();
+}
+
+@keyframes autoBlurAnimation {
+    0% {
+        filter: blur(40px);
+    }
+    40%, 60%{
+        filter: blur(0px);
+    }
+    100% {
+        filter: blur(40px);
+    }
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.fade-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-up.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.modal-body h5{
+    margin-bottom: 20px;
+    margin-top: 15px;
+    font-size: 25px;
+}
+
+.player-font{
+    font-family: var(--font-players);
+}
+
+.bg-blue{
+    background-color: #004586;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.logo{
+    padding-left: 5px;
+}

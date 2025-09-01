@@ -1,0 +1,58 @@
+42º Torneo de Playa Unión
+
+Organizador                  : Circulo de Ajedrez "Rawson"
+Director del Torneo          : Claudio Paolini
+Árbitro Principal            : Federico Rodiguez
+Árbitro                      : Victor Ruiz Diaz
+Lugar                        : Escuela 776 - Playa Unión
+Elo medio                    : 1750
+Fecha                        : 07.02.2025 A 09.02.2025
+
+Clasificación Final
+
+Rank SNo.    Nombre                   Elo FED Club       Pts Res. BH:GP/C1 BH:GP/M1 
+   1    2    Crespo Eugenio          2165 ARG FACH       5½   0      22       17    
+   2    3    Salamanca Martin        2139 ARG FACH        5   0      21      15,5   
+   3    1    Aguilar Andres          2282 ARG FACH        5   0     19,5      14    
+   4    7    Sommariva Rene          1928 ARG FACH       4½   0     19,5      15    
+   5   16    Derbes Jose             1827 ARG FACH       4½   0     18,5      14    
+   6    8    Del Blanco Eduardo      1924 ARG FACH       4½   0      17      12,5   
+   7    4    Pirola Marcos           2051 ARG FACH        4   0     21,5     16,5   
+   8    5    Lucero Marzo Daniel     2031 ARG FACH        4   0     21,5      16    
+   9    6    Cicciari Teo Dante      1938 ARG FACH        4   0     20,5      15    
+  10   11    Salinas Lautaro         1899 ARG FACH        4   0     20,5      15    
+  11   21    De Los Santos Jeremias  1778 ARG FACH        4   0     16,5      12    
+  12   25    Uzcudun Alfonso         1711 ARG FACH        4   0      16       11    
+  13   15    Laurin Ramiro           1833 ARG FACH        4   0     15,5     11,5   
+  14   20    Lopez Jose Luis         1782 ARG FACH       3½   0      19      14,5   
+  15   17    Munoz Mauricio          1827 ARG FACH       3½   0     17,5     12,5   
+  16   19    Nock Pablo              1791 ARG FACH       3½   0     16,5      12    
+  17   28    Oldani Homero           1691 ARG FACH       3½   0     16,5      12    
+  18    9    Jaramillo Walter        1921 ARG FACH       3½   0      13       9     
+  19   10    Oliveri Jairo           1921 ARG FACH        3   0      20       15    
+  20   12    Medero Mino Leon        1870 ARG La Pampa    3   0      18      13,5   
+  21   14    Quinteros Omar          1835 ARG FACH        3   0     17,5     12,5   
+  22   24    Musumeci Ricardo        1729 ARG FACH        3   0     17,5      12    
+  23   18    Navarro Alberto         1810 ARG La Matanza  3   0      16       12    
+  24   22    Sierra Walter Damian    1756 ARG FACH        3   0      16       12    
+  25   29    Cicciari Ricardo Miguel 1675 ARG FACH        3   0      16       12    
+  26   40    Reinoso Jeremias        1497 ARG FACH        3   0      12       9     
+  27   23    Ardiles Alfredo         1739 ARG FACH       2½   0     18,5     13,5   
+  28   13    Leon Mario              1869 ARG            2½   0     14,5     10,5   
+  29   27    Huichulef Enzo          1696 ARG FACH       2½   0     14,5     10,5   
+  30   33    Ventura Ignacio         1620 ARG FACH       2½   0      14      10,5   
+  31   35    Barrera Ricardo         1614 ARG FACH       2½   0      14       10    
+  32   36    Conde Alberto Jose Luis 1594 ARG FACH       2½   0     13,5      10    
+  33   39    Bondino Gaston          1541 ARG FACH       2½   0     13,5     9,5    
+  34   32    Mena Eugenio            1659 ARG FACH        2   0      18      13,5   
+  35   37    Torres Eliseo           1589 ARG FACH        2   0     15,5     11,5   
+  36   38    Loskin Camilo           1566 ARG FACH        2   0      15       11    
+  37   30    Bustos Pedro            1666 ARG FACH        2   0     14,5      10    
+  38   31    Czabanyi Sergio         1664 ARG FACH        2   0      14      9,5    
+  39   26    Baudes Jorge            1705 ARG FACH        2   0      13       9     
+  40   34    Pistone Mateo           1616 ARG FACH       1½   0     13,5      10    
+  41   41    Medero Hildo Rodrigo    1411 ARG La Pampa   1½   0      13      9,5    
+  42   43    Baliente Joaquin           0 ARG FACH       1½   0     12,5     8,5    
+  43   45    Sanchez Rafael Sandro      0 ARG FACH       1½   0     12,5     8,5    
+  44   44    Iribarren Imanol           0 ARG FACH       1½   0     11,5     8,5    
+  45   42    Arispe Camacho Romina      0 ARG FACH        1   0     10,5      7     
