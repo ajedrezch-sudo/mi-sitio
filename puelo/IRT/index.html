@@ -457,6 +457,28 @@
             100% { transform: rotate(360deg); }
         }
 
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0.7;
+                transform: scale(1.1);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
         .cta-title {
             font-size: 2.5rem;
             font-weight: 800;
@@ -775,6 +797,16 @@
                 background: rgba(255, 255, 255, 0.1);
                 transform: translateY(-2px);
                 color: #4ade80;
+            }
+
+            .restaurant-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+                border-color: var(--border-secondary);
+            }
+
+            .restaurant-card a:hover {
+                color: var(--color-accent) !important;
             }
         }
 
@@ -1244,7 +1276,26 @@
             </div>
         </div>
     </header>
-    
+
+    <!-- Important Notice -->
+    <div class="container">
+        <div style="background: linear-gradient(135deg, rgba(255, 69, 0, 0.25), rgba(255, 140, 0, 0.15)); border: 2px solid rgba(255, 69, 0, 0.6); border-radius: 15px; padding: 1.5rem; margin: 2rem auto; text-align: center; position: relative; overflow: hidden; max-width: 900px; box-shadow: 0 10px 30px rgba(255, 69, 0, 0.3); animation: fadeInDown 0.8s ease-out both;">
+            <div style="position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(255, 140, 0, 0.15) 0%, transparent 50%); animation: rotate 8s linear infinite;"></div>
+            <div style="position: relative; z-index: 1;">
+                <div style="display: flex; align-items: center; justify-content: center; gap: 1rem; margin-bottom: 1rem;">
+                    <i class="fas fa-exclamation-triangle" style="font-size: 2rem; color: #ff6b35; animation: pulse 2s ease-in-out infinite;"></i>
+                    <div style="font-size: 1.5rem; font-weight: 800; color: #ff6b35; text-transform: uppercase; letter-spacing: 1px;">
+                        Información Importante
+                    </div>
+                    <i class="fas fa-exclamation-triangle" style="font-size: 2rem; color: #ff6b35; animation: pulse 2s ease-in-out infinite;"></i>
+                </div>
+                <div style="font-size: 1.2rem; font-weight: 600; color: var(--text-primary); line-height: 1.6;">
+                    Las inscripciones cierran el <strong style="color: #ff6b35;">miércoles 5 de noviembre a las 21 hs</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="tournament-buttons">
         <a href="#registration" class="btn btn-tournament" rel="noopener">
             <i class="fas fa-user-plus" style="margin-right: 10px;"></i> Inscripción
@@ -1254,6 +1305,9 @@
         </a>
         <a href="https://s2.chess-results.com/tnrWZ.aspx?lan=2&SNode=S0&tno=1224490" class="btn btn-tournament btn-secondary" target="_blank" rel="noopener">
             <i class="fas fa-users" style="margin-right: 10px;"></i> Jugadores Inscriptos
+        </a>
+        <a href="#restaurants" class="btn btn-tournament btn-secondary">
+            <i class="fas fa-utensils" style="margin-right: 10px;"></i> Dónde Comer
         </a>
         <a href="#schedule" class="btn btn-tournament btn-secondary">
             <i class="fas fa-calendar" style="margin-right: 10px;"></i> Cronograma
@@ -1346,6 +1400,12 @@
                         <div>
                             <h3 class="detail-title">Lugar de juego</h3>
                             <p class="detail-text">Nuevamente el salón "Aguas del Este" será la sede, que con una capacidad para 120 jugadores, da un ambiente más que apropiado para el evento</p>
+                            <div style="display: flex; align-items: center; gap: 0.5rem; margin-top: 1rem; margin-bottom: 1rem;">
+                                <i class="fas fa-map-marker-alt" style="color: var(--color-primary);"></i>
+                                <a href="https://maps.app.goo.gl/RWKMccQWhx4FcNMX7" target="_blank" rel="noopener" style="color: var(--color-accent); text-decoration: none; transition: color var(--transition-fast); font-weight: 600;">
+                                    Ver ubicación en Google Maps
+                                </a>
+                            </div>
                             <img class="detail-image" src="salon_copy.webp" alt="Salón Aguas del Este" onerror="this.style.display='none'">
                         </div>
                     </div>
@@ -1361,6 +1421,12 @@
                     <p class="detail-text">
                         <strong><a style="color: var(--color-silver);" target="_blank" href="https://cabaniaslosrobles.com.ar/">Cabañas Los Robles</a></strong> ofrece el servicio de comedor durante todo el torneo, con opciones deliciosas y precios accesibles. También cuentan con cabañas disponibles para quienes deseen hospedarse en un ambiente cálido y familiar.
                     </p>
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-top: 1rem; margin-bottom: 1rem;">
+                            <i class="fas fa-map-marker-alt" style="color: var(--color-primary);"></i>
+                            <a href="https://maps.app.goo.gl/dmUTHpnRScyZX3Cu5" target="_blank" rel="noopener" style="color: var(--color-accent); text-decoration: none; transition: color var(--transition-fast); font-weight: 600;">
+                                Ver ubicación en Google Maps
+                            </a>
+                        </div>
                     <img class="detail-image" src="robles_copy.webp" alt="Cabañas Los Robles" onerror="this.style.display='none'" style="margin-top: 1rem;">
 
                     <div style="margin-top: 1rem; padding: 1rem; background: rgba(255, 255, 255, 0.05); border-radius: 10px; border-left: 4px solid var(--color-accent);">
@@ -1368,7 +1434,8 @@
                             <i class="fas fa-map-marker-alt"></i>
                             <strong>Ubicación:</strong>
                         </div>
-                        <p style="color: var(--text-secondary); margin-bottom: 1rem;">A solo 15 cuadras del salón de juego</p>
+                        <p style="color: var(--text-secondary); margin-bottom: 0.5rem;">A solo 15 cuadras del salón de juego</p>
+                        
                         
                         <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; color: var(--color-accent);">
                             <i class="fas fa-bed"></i>
@@ -1382,6 +1449,147 @@
                         </div>
                         <p style="color: var(--text-secondary);">Contactarnos para disponibilidad y precios</p>
                     </div>
+                </div>
+            </div>
+
+            <!-- Sponsors/Restaurants Section -->
+            <div class="info-card" style="margin-top: 3rem;" id="restaurants">
+                <h2 class="card-title">
+                    <i class="fas fa-utensils" style="margin-right: 10px;"></i>
+                    Dónde Comer - Nuestros Sponsors
+                </h2>
+                <p class="detail-text" style="margin-bottom: 2rem; text-align: center; font-size: 1.1rem;">
+                    Estos establecimientos apoyan el torneo y ofrecen descuentos especiales para los jugadores
+                </p>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+                    <!-- Di Parma -->
+                    <div class="restaurant-card" style="background: var(--bg-glass); border: 1px solid var(--border-primary); border-radius: var(--radius-lg); padding: 1.5rem; transition: all var(--transition-base); position: relative; overflow: hidden;">
+                        <h3 style="color: var(--color-accent); font-size: 1.4rem; font-weight: 700; margin-bottom: 0.5rem; padding-right: 100px;">
+                            Pizzería Di Parma
+                        </h3>
+                        <p style="color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.5;">
+                            Deliciosas pizzas artesanales con ingredientes de primera calidad. Un clásico de Lago Puelo.
+                        </p>
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem; color: var(--text-muted);">
+                            <i class="fas fa-map-marker-alt" style="color: var(--color-primary);"></i>
+                            <a href="https://maps.app.goo.gl/CbpmQ7D2KChqLbqQA" target="_blank" rel="noopener" style="color: var(--text-muted); text-decoration: none; transition: color var(--transition-fast);">
+                                Ver ubicación
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Awka -->
+                    <div class="restaurant-card" style="background: var(--bg-glass); border: 1px solid var(--border-primary); border-radius: var(--radius-lg); padding: 1.5rem; transition: all var(--transition-base);">
+                        <h3 style="color: var(--color-accent); font-size: 1.4rem; font-weight: 700; margin-bottom: 0.5rem;">
+                            Cervecería Awka
+                        </h3>
+                        <p style="color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.5;">
+                            Cerveza artesanal de la región acompañada de excelente gastronomía. Ambiente cálido y acogedor.
+                        </p>
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem; color: var(--text-muted);">
+                            <i class="fas fa-map-marker-alt" style="color: var(--color-primary);"></i>
+                            <a href="https://maps.app.goo.gl/B3pbJSS9uvpAAKoo6" target="_blank" rel="noopener" style="color: var(--text-muted); text-decoration: none; transition: color var(--transition-fast);">
+                                Ver ubicación
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Luz de Luna -->
+                    <div class="restaurant-card" style="background: var(--bg-glass); border: 1px solid var(--border-primary); border-radius: var(--radius-lg); padding: 1.5rem; transition: all var(--transition-base); position: relative; overflow: hidden;">
+                        <div style="position: absolute; top: 10px; right: 10px; background: linear-gradient(135deg, #10b981, #059669); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.85rem; font-weight: 700; box-shadow: 0 4px 10px rgba(16, 185, 129, 0.3);">
+                            <i class="fas fa-tag" style="margin-right: 5px;"></i>10% OFF
+                        </div>
+                        <h3 style="color: var(--color-accent); font-size: 1.4rem; font-weight: 700; margin-bottom: 0.5rem; padding-right: 100px;">
+                            Restaurante Luz de Luna
+                        </h3>
+                        <p style="color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.5;">
+                            Cocina patagónica con productos locales. Una experiencia gastronómica única en la cordillera.
+                        </p>
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem; color: var(--text-muted);">
+                            <i class="fas fa-map-marker-alt" style="color: var(--color-primary);"></i>
+                            <a href="https://maps.app.goo.gl/QyB1f9dKEoicYEDE6" target="_blank" rel="noopener" style="color: var(--text-muted); text-decoration: none; transition: color var(--transition-fast);">
+                                Ver ubicación
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Entre Amigos -->
+                    <div class="restaurant-card" style="background: var(--bg-glass); border: 1px solid var(--border-primary); border-radius: var(--radius-lg); padding: 1.5rem; transition: all var(--transition-base);">
+                        <h3 style="color: var(--color-accent); font-size: 1.4rem; font-weight: 700; margin-bottom: 0.5rem;">
+                            Restaurante Entre Amigos
+                        </h3>
+                        <p style="color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.5;">
+                            Comida casera y abundante. El lugar perfecto para compartir después de las rondas.
+                        </p>
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem; color: var(--text-muted);">
+                            <i class="fas fa-map-marker-alt" style="color: var(--color-primary);"></i>
+                            <a href="https://maps.app.goo.gl/Q8XWk3bbrHqzs6Ab9" target="_blank" rel="noopener" style="color: var(--text-muted); text-decoration: none; transition: color var(--transition-fast);">
+                                Ver ubicación
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- El Barril -->
+                    <div class="restaurant-card" style="background: var(--bg-glass); border: 1px solid var(--border-primary); border-radius: var(--radius-lg); padding: 1.5rem; transition: all var(--transition-base);">
+                        <h3 style="color: var(--color-accent); font-size: 1.4rem; font-weight: 700; margin-bottom: 0.5rem;">
+                            Cervecería El Barril
+                        </h3>
+                        <p style="color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.5;">
+                            Parrilla y platos típicos argentinos. Plan de papas, hamburguesas gourmet y cervezas artesanales.
+                        </p>
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem; color: var(--text-muted);">
+                            <i class="fas fa-map-marker-alt" style="color: var(--color-primary);"></i>
+                            <a href="https://maps.app.goo.gl/xFPxAFAbQ2mhdWL57" target="_blank" rel="noopener" style="color: var(--text-muted); text-decoration: none; transition: color var(--transition-fast);">
+                                Ver ubicación
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Pueblo Chico -->
+                    <div class="restaurant-card" style="background: var(--bg-glass); border: 1px solid var(--border-primary); border-radius: var(--radius-lg); padding: 1.5rem; transition: all var(--transition-base); position: relative; overflow: hidden;">
+                        <div style="position: absolute; top: 10px; right: 10px; background: linear-gradient(135deg, #10b981, #059669); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.85rem; font-weight: 700; box-shadow: 0 4px 10px rgba(16, 185, 129, 0.3);">
+                            <i class="fas fa-tag" style="margin-right: 5px;"></i>10% OFF
+                        </div>
+                        <h3 style="color: var(--color-accent); font-size: 1.4rem; font-weight: 700; margin-bottom: 0.5rem; padding-right: 100px;">
+                            Restaurante Pueblo Chico
+                        </h3>
+                        <p style="color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.5;">
+                            Sabores patagónicos en un ambiente acogedor. Ideal para disfrutar en familia.
+                        </p>
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem; color: var(--text-muted);">
+                            <i class="fas fa-map-marker-alt" style="color: var(--color-primary);"></i>
+                            <a href="https://maps.app.goo.gl/TzvvCWQRgiJ795xk9" target="_blank" rel="noopener" style="color: var(--text-muted); text-decoration: none; transition: color var(--transition-fast);">
+                                Ver ubicación
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Olafito -->
+                    <div class="restaurant-card" style="background: var(--bg-glass); border: 1px solid var(--border-primary); border-radius: var(--radius-lg); padding: 1.5rem; transition: all var(--transition-base);">
+                        <h3 style="color: var(--color-accent); font-size: 1.4rem; font-weight: 700; margin-bottom: 0.5rem;">
+                            Fiambrería Olafito
+                        </h3>
+                        <p style="color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.5;">
+                            Fiambres artesanales y productos regionales de alta calidad. Perfecto para un picnic.
+                        </p>
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem; color: var(--text-muted);">
+                            <i class="fas fa-map-marker-alt" style="color: var(--color-primary);"></i>
+                            <a href="https://maps.app.goo.gl/B3pbJSS9uvpAAKoo6" target="_blank" rel="noopener" style="color: var(--text-muted); text-decoration: none; transition: color var(--transition-fast);">
+                                Ver ubicación
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top: 2rem; padding: 1.5rem; background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(5, 150, 105, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); border-radius: 15px; text-align: center;">
+                    <div style="font-size: 1.1rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.5rem;">
+                        <i class="fas fa-info-circle" style="margin-right: 8px; color: var(--color-accent);"></i>
+                        Para acceder a los descuentos
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 1rem;">
+                        Mencioná que participás del torneo de ajedrez al momento de realizar tu pedido
+                    </p>
                 </div>
             </div>
 
@@ -1516,7 +1724,7 @@
                     <div class="other-prizes">
                         <div class="prize-row">
                             <span class="position">Solo inscripción</span>
-                            <span class="amount">$50.000</span>
+                            <span class="amount">$40.000</span>
                         </div>
                         <div class="prize-row">
                             <span class="position">Comidas (incluye 6 comidas)</span>
@@ -1648,4 +1856,3 @@
     </script>
 </body>
 </html>
-
