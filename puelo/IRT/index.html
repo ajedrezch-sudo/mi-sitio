@@ -18,9 +18,9 @@
             --color-warning: #f59e0b;
             
             /* Background Colors */
-            --bg-primary: #0a0e27;
-            --bg-secondary: #1a1d3a;
-            --bg-tertiary: #2d3561;
+            --bg-primary: #050814;
+            --bg-secondary: #0d1020;
+            --bg-tertiary: #1a1d35;
             --bg-glass: rgba(255, 255, 255, 0.05);
             --bg-glass-hover: rgba(255, 255, 255, 0.1);
             --bg-glass-subtle: rgba(255, 255, 255, 0.03);
@@ -211,7 +211,7 @@
             justify-content: center;
             gap: var(--space-lg);
             padding: var(--space-xl) 0;
-            margin: var(--space-xl) 0;
+            margin: var(--space-sm) 0;
             animation: slideInUp 1.2s ease-out 0.3s both;
             flex-wrap: wrap;
         }
@@ -264,9 +264,122 @@
             transition: transform var(--transition-base);
         }
 
+        /* Live Stream Buttons */
+        .live-stream-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: var(--space-lg);
+            padding: var(--space-xl) 0 0 0;
+            animation: fadeInDown 1s ease-out 0.3s both;
+        }
+
+        .live-btn {
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+            padding: var(--space-md) var(--space-xl);
+            border-radius: var(--radius-lg);
+            font-size: var(--font-size-base);
+            font-weight: var(--font-weight-semibold);
+            text-decoration: none;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: all var(--transition-base);
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+        }
+
+        .live-btn::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            transform: translate(-50%, -50%);
+            transition: width var(--transition-slow), height var(--transition-slow);
+        }
+
+        .live-btn:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+
+        .live-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .live-btn i {
+            font-size: 1.5em;
+            z-index: 1;
+        }
+
+        .live-btn span {
+            z-index: 1;
+        }
+
+        .live-btn-youtube {
+            background: linear-gradient(135deg, #FF0000, #CC0000);
+        }
+
+        .live-btn-youtube:hover {
+            background: linear-gradient(135deg, #FF0000, #FF3333);
+        }
+
+        .live-btn-twitch {
+            background: linear-gradient(135deg, #9146FF, #6441A5);
+        }
+
+        .live-btn-twitch:hover {
+            background: linear-gradient(135deg, #9146FF, #A970FF);
+        }
+
+        .live-btn-lichess {
+            background: linear-gradient(135deg, #161512, #2a2621);
+        }
+
+        .live-btn-lichess:hover {
+            background: linear-gradient(135deg, #161512, #3a3631);
+        }
+
+        .live-btn-lichess img {
+            width: 1.5em;
+            height: 1.5em;
+            object-fit: contain;
+            z-index: 1;
+        }
+
+        .live-indicator {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background: #00ff00;
+            border-radius: 50%;
+            margin-right: var(--space-xs);
+            animation: pulse-live 2s ease-in-out infinite;
+            box-shadow: 0 0 10px #00ff00;
+        }
+
+        @keyframes pulse-live {
+            0%, 100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0.6;
+                transform: scale(1.2);
+            }
+        }
+
         /* Main content */
         .main-content {
-            padding-bottom: var(--space-3xl);
+            padding-bottom: var(--space-sm);
             animation: fadeIn 1.5s ease-out 0.5s both;
         }
 
@@ -707,6 +820,118 @@
             color: var(--text-secondary);
         }
 
+        /* Chess.com and Chessable Prizes */
+        .platform-prizes {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.05));
+            border-radius: 15px;
+            padding: 1.5rem;
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            margin-top: 1.5rem;
+        }
+
+        .platform-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .platform-logo {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+        }
+
+        .platform-title {
+            text-align: center;
+            color: var(--color-accent);
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .prize-category {
+            margin-bottom: 1.5rem;
+        }
+
+        .prize-category:last-child {
+            margin-bottom: 0;
+        }
+
+        .category-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.75rem;
+            text-align: center;
+        }
+
+        .prize-details {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .prize-detail-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 0.75rem 1rem;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .prize-position {
+            font-weight: 500;
+            color: var(--text-secondary);
+        }
+
+        .prize-reward {
+            font-weight: 600;
+            color: var(--color-accent);
+        }
+
+        .diamond-prizes {
+            margin-bottom: 1.5rem;
+        }
+
+        .diamond-section {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 1rem;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+
+        .diamond-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .diamond-tier {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--color-gold);
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+
+        .diamond-recipients {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            justify-content: center;
+        }
+
+        .diamond-item {
+            background: rgba(255, 215, 0, 0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
         /* ======= HOVER EFFECTS SOLO PARA DESKTOP ======= */
         @media (hover: hover) and (pointer: fine) {
             .logo:hover {
@@ -849,6 +1074,25 @@
                 font-size: var(--font-size-3xl);
             }
 
+            /* Live Stream Buttons Mobile */
+            .live-stream-container {
+                flex-direction: column;
+                gap: var(--space-md);
+                padding: var(--space-md) 0;
+            }
+
+            .live-btn {
+                width: 90%;
+                max-width: 320px;
+                justify-content: center;
+                padding: var(--space-md) var(--space-lg);
+                font-size: var(--font-size-sm);
+            }
+
+            .live-btn i {
+                font-size: 1.3em;
+            }
+
             /* Tournament Buttons Mobile */
             .tournament-buttons {
                 flex-direction: column;
@@ -857,7 +1101,7 @@
                 padding: var(--space-lg) var(--space-md);
                 margin: var(--space-lg) 0;
             }
-            
+
             .btn {
                 width: 100%;
                 max-width: 320px;
@@ -1277,7 +1521,28 @@
         </div>
     </header>
 
-    <!-- Important Notice -->
+    <!-- Live Stream Buttons
+    <div class="container">
+        <div class="live-stream-container">
+            <a href="#" class="live-btn live-btn-youtube" target="_blank" rel="noopener noreferrer">
+                <span class="live-indicator"></span>
+                <i class="fab fa-youtube"></i>
+                <span>EN VIVO - YouTube</span>
+            </a>
+            <a href="#" class="live-btn live-btn-twitch" target="_blank" rel="noopener noreferrer">
+                <span class="live-indicator"></span>
+                <i class="fab fa-twitch"></i>
+                <span>EN VIVO - Twitch</span>
+            </a>
+            <a href="https://lichess.org/broadcast/4-torneo-abierto-irt-lago-puelo-del-6-al-9-de-nov/ronda-1/0IHxh1MK" class="live-btn live-btn-lichess" target="_blank" rel="noopener noreferrer">
+                <span class="live-indicator"></span>
+                <img src="img/lichess.png" alt="Lichess">
+                <span>EN VIVO - Lichess</span>
+            </a>
+        </div>
+    </div> -->
+
+    <!-- Important Notice 
     <div class="container">
         <div style="background: linear-gradient(135deg, rgba(255, 69, 0, 0.25), rgba(255, 140, 0, 0.15)); border: 2px solid rgba(255, 69, 0, 0.6); border-radius: 15px; padding: 1.5rem; margin: 2rem auto; text-align: center; position: relative; overflow: hidden; max-width: 900px; box-shadow: 0 10px 30px rgba(255, 69, 0, 0.3); animation: fadeInDown 0.8s ease-out both;">
             <div style="position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(255, 140, 0, 0.15) 0%, transparent 50%); animation: rotate 8s linear infinite;"></div>
@@ -1294,483 +1559,195 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div class="tournament-buttons">
-        <a href="#registration" class="btn btn-tournament" rel="noopener">
-            <i class="fas fa-user-plus" style="margin-right: 10px;"></i> Inscripción
+        <a href="https://s3.chess-results.com/tnr1224490.aspx?lan=2&art=1&rd=7&turdet=YES&flag=30&SNode=S0" class="btn btn-tournament btn-secondary" target="_blank" rel="noopener">
+            <i class="fas fa-trophy" style="margin-right: 10px;"></i> Clasificación Final
         </a>
-        <a href="https://docs.google.com/document/d/1w5dkedGwOve2WF-eROfZeL2WTsRBPHtwdmYoDHVjPko/edit?usp=sharing" class="btn btn-tournament btn-secondary" target="_blank" rel="noopener">
-            <i class="fas fa-file-alt" style="margin-right: 10px;"></i> Bases del Torneo
+        <a href="#photos" class="btn btn-tournament">
+            <i class="fas fa-camera" style="margin-right: 10px;"></i> Álbum de Fotos
         </a>
-        <a href="https://s2.chess-results.com/tnrWZ.aspx?lan=2&SNode=S0&tno=1224490" class="btn btn-tournament btn-secondary" target="_blank" rel="noopener">
-            <i class="fas fa-users" style="margin-right: 10px;"></i> Jugadores Inscriptos
+        <a href="https://instagram.com/ajedrezlp" class="btn btn-tournament btn-secondary" target="_blank" rel="noopener">
+            <i class="fab fa-instagram" style="margin-right: 10px;"></i> Instagram
         </a>
-        <a href="#restaurants" class="btn btn-tournament btn-secondary">
-            <i class="fas fa-utensils" style="margin-right: 10px;"></i> Dónde Comer
+        <a href="https://www.facebook.com/ajedrezlp" class="btn btn-tournament" target="_blank" rel="noopener">
+            <i class="fab fa-facebook" style="margin-right: 10px;"></i> Facebook
         </a>
-        <a href="#schedule" class="btn btn-tournament btn-secondary">
-            <i class="fas fa-calendar" style="margin-right: 10px;"></i> Cronograma
-        </a>
-        <a href="#prizes" class="btn btn-tournament btn-secondary">
-            <i class="fas fa-trophy" style="margin-right: 10px;"></i> Premios
+        <a href="https://www.youtube.com/@ajedrezlp" class="btn btn-tournament btn-secondary" target="_blank" rel="noopener">
+            <i class="fab fa-youtube" style="margin-right: 10px;"></i> YouTube
         </a>
     </div>
 
-    <!-- Main Content -->
-    <main class="main-content">
-        <div class="container">
-            <div class="content-grid">
-                <!-- Left Column - Organization Info (will be reordered on mobile) -->
-                <div class="event-details organization-info">
-                    <div class="organizers">
-                        <h3 class="card-title">Organización</h3>
-                        <p class="detail-text">El torneo es organizado por el Club de ajedrez Lago Puelo, con la colaboración de la Federación de Ajedrez Chubutense, Chubut Deportes y la Municipalidad de Lago Puelo.</p>
-                        <br>
-                        <h3 class="card-title">Comisión organizativa</h3>
-                        <p><strong>Organizadores principales:</strong></p><br>
-                        <div class="organizer">Marzo Lucero</div>
-                        <div class="organizer">Teo Cicciari</div>
-                        <div class="organizer">Alberto Conde</div>
-                        
-                        <div class="arbitro">
-                            <p><strong>Árbitro principal:</strong></p><br>
-                            <div class="organizer">AI Juan Durán</div>
-                        </div>
+    <!-- Tournament Summary -->
+    <div class="container" style="margin-top: 3rem; margin-bottom: 3rem;">
+        <div class="info-card">
+            <h2 class="card-title" style="text-align: center; font-size: 2.5rem; margin-bottom: 2rem;">
+                <i class="fas fa-trophy" style="margin-right: 10px; color: var(--color-accent);"></i>
+                ¡El GM Pepe Cuenca, campeón del 4° Abierto Internacional de Lago Puelo!
+            </h2>
+
+            <div style="display: flex; flex-direction: column; gap: 2rem; align-items: center;">
+                <!-- En desktop: imagen a la izquierda, texto a la derecha -->
+                <div style="display: grid; grid-template-columns: 1fr; gap: 2rem; align-items: start;">
+                    <div style="text-align: center;">
+                        <img src="campeon.webp" alt="GM Pepe Cuenca - Campeón del 4° Abierto Internacional de Lago Puelo" style="max-width: 100%; height: auto; border-radius: 15px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); border: 3px solid rgba(16, 185, 129, 0.3);">
                     </div>
 
-                    <div class="contact-info">
-                        <h3 class="card-title">Contacto</h3>
-                        <div class="contact-item">
-                            <svg class="contact-icon" viewBox="0 0 24 24">
-                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
-                            </svg>
-                            <span>2944-387512 - Marzo Lucero</span>
-                        </div>
-                        <div class="contact-item">
-                            <svg class="contact-icon" viewBox="0 0 24 24">
-                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                            </svg>
-                            <span>ajedrezlp@gmail.com</span>
-                        </div>
-                        <div class="contact-item">
-                            <svg class="contact-icon" viewBox="0 0 24 24">
-                                <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/>
-                            </svg>
-                            <span>@ajedrezlp en Instagram</span>
-                        </div>
-                    </div>
-                </div>
+                    <div style="line-height: 1.8; color: var(--text-secondary); font-size: 1.1rem;">
+                        <p style="margin-bottom: 1.5rem;">
+                            Este domingo 9 de noviembre finalizó una nueva edición de este torneo que, año tras año, sigue creciendo de manera increíble. En esta ocasión, contamos con la presencia estelar del <strong>Gran Maestro internacional José "Pepe" Cuenca</strong>, y con un nuevo récord de participación: <strong>¡110 jugadores de todo el país nos eligieron para compartir este evento único!</strong>
+                        </p>
 
-                <!-- Right Column - Event Details (will appear first on mobile) -->
-                <div class="event-details main-info">
-                    <div class="detail-section">
-                        <h3 class="detail-title">¡Viví una experiencia única de ajedrez en la cordillera patagónica!</h3>
-                        <p class="detail-text">Te invitamos a participar de un torneo de alto nivel, disfrutando el encanto primaveral de la Comarca Andina.</p>
-                        <img class="detail-image" src="lago_copy.webp" alt="Lago Puelo" onerror="this.style.display='none'">
-                    </div>
-                    
-                    <div class="detail-section pepe-section">
-                        <div class="pepe-content">
-                            <div class="pepe-text">
-                                <h3 class="detail-title">Pepe Cuenca Confirmado!</h3>
-                                <p class="detail-text">Este año, el evento contará con la participación especial del Gran Maestro Pepe Cuenca, una oportunidad imperdible para compartir tablero y experiencias con uno de los referentes del ajedrez hispano.</p>
-                                
-                            </div>
-                            <div class="pepe-image-container">
-                                <img class="pepe-image" src="pepe_copy.webp" alt="Pepe Cuenca" onerror="this.style.display='none'">
-                            </div>
-                        </div>
+                        <p style="margin-bottom: 1.5rem;">
+                            El torneo cerró con un espectacular asado para 40 personas, preparado por Diego y Sandro, a quienes agradecemos de todo corazón. La jornada de cierre fue una verdadera fiesta, con partidas de pasapiezas, metegol y ping pong que se extendieron <strong>¡hasta las 4 de la mañana!</strong>
+                        </p>
                     </div>
                 </div>
             </div>
 
-            <div class="content-grid">
-                <div class="event-details">
-                    <div class="organizers">
-                        <h3 class="card-title">Historia del Torneo</h3>
-                        <div class="organizer">
-                            <p>Desde su primera edición en 2022, el torneo de Lago Puelo se ha consolidado como un evento ajedrecístico de referencia en la región. Con una convocatoria inicial de 83 jugadores provenientes de Argentina y Chile, el torneo fue creciendo año a año, duplicando la participación femenina y juvenil en su segunda edición y sumando la presencia internacional de Uruguay.</p><br> 
-                            <p>En 2024, alcanzó uno de sus grandes objetivos: llegar a los 100 jugadores, superando todas las expectativas. La calidad organizativa, el entorno natural de Lago Puelo y el espíritu de comunidad ajedrecística han convertido al torneo en un espacio único, cada vez más diverso, federal y conectado.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="event-details">
-                    <div class="detail-section">
-                        <div>
-                            <h3 class="detail-title">Lugar de juego</h3>
-                            <p class="detail-text">Nuevamente el salón "Aguas del Este" será la sede, que con una capacidad para 120 jugadores, da un ambiente más que apropiado para el evento</p>
-                            <div style="display: flex; align-items: center; gap: 0.5rem; margin-top: 1rem; margin-bottom: 1rem;">
-                                <i class="fas fa-map-marker-alt" style="color: var(--color-primary);"></i>
-                                <a href="https://maps.app.goo.gl/RWKMccQWhx4FcNMX7" target="_blank" rel="noopener" style="color: var(--color-accent); text-decoration: none; transition: color var(--transition-fast); font-weight: 600;">
-                                    Ver ubicación en Google Maps
-                                </a>
-                            </div>
-                            <img class="detail-image" src="salon_copy.webp" alt="Salón Aguas del Este" onerror="this.style.display='none'">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="detail-section">
-                <div>
-                    <h3 class="detail-title">
-                        <i class="fas fa-utensils" style="margin-right: 8px; color: var(--color-accent);"></i>
-                        Comedor & Hospedaje
+            <style>
+                @media (min-width: 768px) {
+                    .info-card > div > div {
+                        grid-template-columns: 400px 1fr !important;
+                    }
+                    .info-card img[src="campeon.webp"] {
+                        max-width: 400px !important;
+                    }
+                }
+            </style>
+
+            <div style="line-height: 1.8; color: var(--text-secondary); font-size: 1.1rem; margin-top: 2rem;">
+
+                <div id="photos" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(5, 150, 105, 0.05)); border: 2px solid rgba(16, 185, 129, 0.3); border-radius: 15px; padding: 1.5rem; margin: 2rem 0;">
+                    <h3 style="color: var(--color-primary); margin-bottom: 1.5rem; font-size: 1.4rem; text-align: center;">
+                        <i class="fas fa-camera" style="margin-right: 10px;"></i>Álbumes de Fotos
                     </h3>
-                    <p class="detail-text">
-                        <strong><a style="color: var(--color-silver);" target="_blank" href="https://cabaniaslosrobles.com.ar/">Cabañas Los Robles</a></strong> ofrece el servicio de comedor durante todo el torneo, con opciones deliciosas y precios accesibles. También cuentan con cabañas disponibles para quienes deseen hospedarse en un ambiente cálido y familiar.
+
+                    <p style="text-align: center; margin-bottom: 2rem; font-size: 1.05rem;">
+                        Ya están disponibles los álbumes de fotos del evento. Agradecemos especialmente a quienes capturaron los mejores momentos del torneo. ¡Gracias por su mirada única!
                     </p>
-                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-top: 1rem; margin-bottom: 1rem;">
-                            <i class="fas fa-map-marker-alt" style="color: var(--color-primary);"></i>
-                            <a href="https://maps.app.goo.gl/dmUTHpnRScyZX3Cu5" target="_blank" rel="noopener" style="color: var(--color-accent); text-decoration: none; transition: color var(--transition-fast); font-weight: 600;">
-                                Ver ubicación en Google Maps
+
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+                        <!-- @camilapitrelli -->
+                        <div style="background: var(--bg-glass); border: 1px solid rgba(16, 185, 129, 0.2); border-radius: 10px; padding: 1.2rem; position: relative; overflow: hidden;">
+                            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 3px; background: linear-gradient(90deg, var(--color-primary), var(--color-accent));"></div>
+                            <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem;">
+                                <i class="fab fa-instagram" style="font-size: 1.8rem; color: #E1306C;"></i>
+                                <div style="flex: 1;">
+                                    <a href="https://instagram.com/camilapitrelli" target="_blank" rel="noopener" style="font-weight: 700; color: var(--text-primary); font-size: 1.1rem; text-decoration: none; display: block; transition: color 0.3s;">@camilapitrelli</a>
+                                    <div style="font-size: 0.85rem; color: var(--text-muted);">MEGA</div>
+                                </div>
+                            </div>
+                            <a href="https://mega.nz/folder/dOhQBa7Z#TWnv3VfrjH1yHFwUSMP-qA" target="_blank" rel="noopener" style="text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 0.5rem; color: var(--color-accent); font-weight: 600; font-size: 0.95rem; padding: 0.6rem; background: rgba(16, 185, 129, 0.1); border-radius: 8px; transition: all 0.3s ease;">
+                                <i class="fas fa-images"></i>
+                                <span>Ver álbum</span>
+                                <i class="fas fa-external-link-alt" style="font-size: 0.8rem;"></i>
                             </a>
                         </div>
-                    <img class="detail-image" src="robles_copy.webp" alt="Cabañas Los Robles" onerror="this.style.display='none'" style="margin-top: 1rem;">
 
-                    <div style="margin-top: 1rem; padding: 1rem; background: rgba(255, 255, 255, 0.05); border-radius: 10px; border-left: 4px solid var(--color-accent);">
-                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; color: var(--color-accent);">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <strong>Ubicación:</strong>
+                        <!-- @venganzaunder -->
+                        <div style="background: var(--bg-glass); border: 1px solid rgba(16, 185, 129, 0.2); border-radius: 10px; padding: 1.2rem; position: relative; overflow: hidden;">
+                            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 3px; background: linear-gradient(90deg, var(--color-primary), var(--color-accent));"></div>
+                            <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem;">
+                                <i class="fab fa-instagram" style="font-size: 1.8rem; color: #E1306C;"></i>
+                                <div style="flex: 1;">
+                                    <a href="https://instagram.com/venganzaunder" target="_blank" rel="noopener" style="font-weight: 700; color: var(--text-primary); font-size: 1.1rem; text-decoration: none; display: block; transition: color 0.3s;">@venganzaunder</a>
+                                    <div style="font-size: 0.85rem; color: var(--text-muted);">MEGA</div>
+                                </div>
+                            </div>
+                            <a href="https://mega.nz/folder/vp5W3ZLB#pH6OuszifZNc_zp1o9-ruA" target="_blank" rel="noopener" style="text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 0.5rem; color: var(--color-accent); font-weight: 600; font-size: 0.95rem; padding: 0.6rem; background: rgba(16, 185, 129, 0.1); border-radius: 8px; transition: all 0.3s ease;">
+                                <i class="fas fa-images"></i>
+                                <span>Ver álbum</span>
+                                <i class="fas fa-external-link-alt" style="font-size: 0.8rem;"></i>
+                            </a>
                         </div>
-                        <p style="color: var(--text-secondary); margin-bottom: 0.5rem;">A solo 15 cuadras del salón de juego</p>
-                        
-                        
-                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; color: var(--color-accent);">
-                            <i class="fas fa-bed"></i>
-                            <strong>Hospedaje:</strong>
+
+                        <!-- @ph_hernanleyez -->
+                        <div style="background: var(--bg-glass); border: 1px solid rgba(16, 185, 129, 0.2); border-radius: 10px; padding: 1.2rem; position: relative; overflow: hidden;">
+                            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 3px; background: linear-gradient(90deg, var(--color-primary), var(--color-accent));"></div>
+                            <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem;">
+                                <i class="fab fa-instagram" style="font-size: 1.8rem; color: #E1306C;"></i>
+                                <div style="flex: 1;">
+                                    <a href="https://instagram.com/ph_hernanleyez" target="_blank" rel="noopener" style="font-weight: 700; color: var(--text-primary); font-size: 1.1rem; text-decoration: none; display: block; transition: color 0.3s;">@ph_hernanleyez</a>
+                                    <div style="font-size: 0.85rem; color: var(--text-muted);">Google Drive</div>
+                                </div>
+                            </div>
+                            <a href="https://drive.google.com/drive/folders/1pIQUxgdhRzz6p9gUcQi_SkLAQO_oMJuh?usp=sharing" target="_blank" rel="noopener" style="text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 0.5rem; color: var(--color-accent); font-weight: 600; font-size: 0.95rem; padding: 0.6rem; background: rgba(16, 185, 129, 0.1); border-radius: 8px; transition: all 0.3s ease;">
+                                <i class="fas fa-images"></i>
+                                <span>Ver álbum</span>
+                                <i class="fas fa-external-link-alt" style="font-size: 0.8rem;"></i>
+                            </a>
                         </div>
-                        <p style="color: var(--text-secondary); margin-bottom: 1rem;">Cabañas equipadas con todas las comodidades</p>
-                        
-                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; color: var(--color-accent);">
-                            <i class="fas fa-phone"></i>
-                            <strong>Reservas:</strong>
+
+                        <!-- @visualuv -->
+                        <div style="background: var(--bg-glass); border: 1px solid rgba(16, 185, 129, 0.2); border-radius: 10px; padding: 1.2rem; position: relative; overflow: hidden;">
+                            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 3px; background: linear-gradient(90deg, var(--color-primary), var(--color-accent));"></div>
+                            <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem;">
+                                <i class="fab fa-instagram" style="font-size: 1.8rem; color: #E1306C;"></i>
+                                <div style="flex: 1;">
+                                    <a href="https://instagram.com/visualuv" target="_blank" rel="noopener" style="font-weight: 700; color: var(--text-primary); font-size: 1.1rem; text-decoration: none; display: block; transition: color 0.3s;">@visualuv</a>
+                                    <div style="font-size: 0.85rem; color: var(--text-muted);">Google Drive</div>
+                                </div>
+                            </div>
+                            <a href="https://drive.google.com/drive/folders/1cGlWoi7CcDgNxdzN9rceYAQsxDzNu0ze?usp=sharing" target="_blank" rel="noopener" style="text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 0.5rem; color: var(--color-accent); font-weight: 600; font-size: 0.95rem; padding: 0.6rem; background: rgba(16, 185, 129, 0.1); border-radius: 8px; transition: all 0.3s ease;">
+                                <i class="fas fa-images"></i>
+                                <span>Ver álbum</span>
+                                <i class="fas fa-external-link-alt" style="font-size: 0.8rem;"></i>
+                            </a>
                         </div>
-                        <p style="color: var(--text-secondary);">Contactarnos para disponibilidad y precios</p>
                     </div>
                 </div>
-            </div>
 
-            <!-- Sponsors/Restaurants Section -->
-            <div class="info-card" style="margin-top: 3rem;" id="restaurants">
-                <h2 class="card-title">
-                    <i class="fas fa-utensils" style="margin-right: 10px;"></i>
-                    Dónde Comer - Nuestros Sponsors
-                </h2>
-                <p class="detail-text" style="margin-bottom: 2rem; text-align: center; font-size: 1.1rem;">
-                    Estos establecimientos apoyan el torneo y ofrecen descuentos especiales para los jugadores
+                <h3 style="color: var(--color-primary); margin: 2rem 0 1rem 0; font-size: 1.4rem;">
+                    <i class="fas fa-heart" style="margin-right: 10px;"></i>Agradecimientos
+                </h3>
+
+                <p style="margin-bottom: 1.5rem;">
+                    Desde la organización solo nos quedan palabras de agradecimiento:
                 </p>
 
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
-                    <!-- Di Parma -->
-                    <div class="restaurant-card" style="background: var(--bg-glass); border: 1px solid var(--border-primary); border-radius: var(--radius-lg); padding: 1.5rem; transition: all var(--transition-base); position: relative; overflow: hidden;">
-                        <h3 style="color: var(--color-accent); font-size: 1.4rem; font-weight: 700; margin-bottom: 0.5rem; padding-right: 100px;">
-                            Pizzería Di Parma
-                        </h3>
-                        <p style="color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.5;">
-                            Deliciosas pizzas artesanales con ingredientes de primera calidad. Un clásico de Lago Puelo.
-                        </p>
-                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem; color: var(--text-muted);">
-                            <i class="fas fa-map-marker-alt" style="color: var(--color-primary);"></i>
-                            <a href="https://maps.app.goo.gl/CbpmQ7D2KChqLbqQA" target="_blank" rel="noopener" style="color: var(--text-muted); text-decoration: none; transition: color var(--transition-fast);">
-                                Ver ubicación
-                            </a>
-                        </div>
-                    </div>
+                <ul style="list-style: none; padding: 0; margin-bottom: 1.5rem;">
+                    <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;">
+                        <i class="fas fa-check-circle" style="position: absolute; left: 0; top: 0.3rem; color: var(--color-accent);"></i>
+                        A todos los que confiaron en nosotros y viajaron cientos (y hasta miles) de kilómetros para venir a jugar.
+                    </li>
+                    <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;">
+                        <i class="fas fa-check-circle" style="position: absolute; left: 0; top: 0.3rem; color: var(--color-accent);"></i>
+                        A <strong>Pepe Cuenca</strong>, por su enorme predisposición y cercanía, incluso brindando simultáneas a los jugadores del torneo.
+                    </li>
+                    <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;">
+                        <i class="fas fa-check-circle" style="position: absolute; left: 0; top: 0.3rem; color: var(--color-accent);"></i>
+                        A toda la gente del club, que trabajó incansablemente con las mesas, el buffet y mucho más.
+                    </li>
+                    <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;">
+                        <i class="fas fa-check-circle" style="position: absolute; left: 0; top: 0.3rem; color: var(--color-accent);"></i>
+                        A la <strong>Municipalidad de Lago Puelo</strong>, que nos proveyó la comida para los jugadores.
+                    </li>
+                    <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;">
+                        <i class="fas fa-check-circle" style="position: absolute; left: 0; top: 0.3rem; color: var(--color-accent);"></i>
+                        A la <strong>FACH</strong>, que además de participar, aportó con todos los juegos y relojes necesarios.
+                    </li>
+                    <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;">
+                        <i class="fas fa-check-circle" style="position: absolute; left: 0; top: 0.3rem; color: var(--color-accent);"></i>
+                        A <strong>Chubut Deportes</strong> por el respaldo.
+                    </li>
+                    <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;">
+                        <i class="fas fa-check-circle" style="position: absolute; left: 0; top: 0.3rem; color: var(--color-accent);"></i>
+                        A todos nuestros <strong>sponsors</strong>, que hicieron posible esta edición.
+                    </li>
+                    <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;">
+                        <i class="fas fa-check-circle" style="position: absolute; left: 0; top: 0.3rem; color: var(--color-accent);"></i>
+                        Y a los árbitros, que una vez más estuvieron a la altura, con un trabajo impecable.
+                    </li>
+                </ul>
 
-                    <!-- Awka -->
-                    <div class="restaurant-card" style="background: var(--bg-glass); border: 1px solid var(--border-primary); border-radius: var(--radius-lg); padding: 1.5rem; transition: all var(--transition-base);">
-                        <h3 style="color: var(--color-accent); font-size: 1.4rem; font-weight: 700; margin-bottom: 0.5rem;">
-                            Cervecería Awka
-                        </h3>
-                        <p style="color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.5;">
-                            Cerveza artesanal de la región acompañada de excelente gastronomía. Ambiente cálido y acogedor.
-                        </p>
-                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem; color: var(--text-muted);">
-                            <i class="fas fa-map-marker-alt" style="color: var(--color-primary);"></i>
-                            <a href="https://maps.app.goo.gl/B3pbJSS9uvpAAKoo6" target="_blank" rel="noopener" style="color: var(--text-muted); text-decoration: none; transition: color var(--transition-fast);">
-                                Ver ubicación
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Luz de Luna -->
-                    <div class="restaurant-card" style="background: var(--bg-glass); border: 1px solid var(--border-primary); border-radius: var(--radius-lg); padding: 1.5rem; transition: all var(--transition-base); position: relative; overflow: hidden;">
-                        <div style="position: absolute; top: 10px; right: 10px; background: linear-gradient(135deg, #10b981, #059669); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.85rem; font-weight: 700; box-shadow: 0 4px 10px rgba(16, 185, 129, 0.3);">
-                            <i class="fas fa-tag" style="margin-right: 5px;"></i>10% OFF
-                        </div>
-                        <h3 style="color: var(--color-accent); font-size: 1.4rem; font-weight: 700; margin-bottom: 0.5rem; padding-right: 100px;">
-                            Restaurante Luz de Luna
-                        </h3>
-                        <p style="color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.5;">
-                            Cocina patagónica con productos locales. Una experiencia gastronómica única en la cordillera.
-                        </p>
-                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem; color: var(--text-muted);">
-                            <i class="fas fa-map-marker-alt" style="color: var(--color-primary);"></i>
-                            <a href="https://maps.app.goo.gl/QyB1f9dKEoicYEDE6" target="_blank" rel="noopener" style="color: var(--text-muted); text-decoration: none; transition: color var(--transition-fast);">
-                                Ver ubicación
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Entre Amigos -->
-                    <div class="restaurant-card" style="background: var(--bg-glass); border: 1px solid var(--border-primary); border-radius: var(--radius-lg); padding: 1.5rem; transition: all var(--transition-base);">
-                        <h3 style="color: var(--color-accent); font-size: 1.4rem; font-weight: 700; margin-bottom: 0.5rem;">
-                            Restaurante Entre Amigos
-                        </h3>
-                        <p style="color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.5;">
-                            Comida casera y abundante. El lugar perfecto para compartir después de las rondas.
-                        </p>
-                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem; color: var(--text-muted);">
-                            <i class="fas fa-map-marker-alt" style="color: var(--color-primary);"></i>
-                            <a href="https://maps.app.goo.gl/Q8XWk3bbrHqzs6Ab9" target="_blank" rel="noopener" style="color: var(--text-muted); text-decoration: none; transition: color var(--transition-fast);">
-                                Ver ubicación
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- El Barril -->
-                    <div class="restaurant-card" style="background: var(--bg-glass); border: 1px solid var(--border-primary); border-radius: var(--radius-lg); padding: 1.5rem; transition: all var(--transition-base);">
-                        <h3 style="color: var(--color-accent); font-size: 1.4rem; font-weight: 700; margin-bottom: 0.5rem;">
-                            Cervecería El Barril
-                        </h3>
-                        <p style="color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.5;">
-                            Parrilla y platos típicos argentinos. Plan de papas, hamburguesas gourmet y cervezas artesanales.
-                        </p>
-                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem; color: var(--text-muted);">
-                            <i class="fas fa-map-marker-alt" style="color: var(--color-primary);"></i>
-                            <a href="https://maps.app.goo.gl/xFPxAFAbQ2mhdWL57" target="_blank" rel="noopener" style="color: var(--text-muted); text-decoration: none; transition: color var(--transition-fast);">
-                                Ver ubicación
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Pueblo Chico -->
-                    <div class="restaurant-card" style="background: var(--bg-glass); border: 1px solid var(--border-primary); border-radius: var(--radius-lg); padding: 1.5rem; transition: all var(--transition-base); position: relative; overflow: hidden;">
-                        <div style="position: absolute; top: 10px; right: 10px; background: linear-gradient(135deg, #10b981, #059669); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.85rem; font-weight: 700; box-shadow: 0 4px 10px rgba(16, 185, 129, 0.3);">
-                            <i class="fas fa-tag" style="margin-right: 5px;"></i>10% OFF
-                        </div>
-                        <h3 style="color: var(--color-accent); font-size: 1.4rem; font-weight: 700; margin-bottom: 0.5rem; padding-right: 100px;">
-                            Restaurante Pueblo Chico
-                        </h3>
-                        <p style="color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.5;">
-                            Sabores patagónicos en un ambiente acogedor. Ideal para disfrutar en familia.
-                        </p>
-                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem; color: var(--text-muted);">
-                            <i class="fas fa-map-marker-alt" style="color: var(--color-primary);"></i>
-                            <a href="https://maps.app.goo.gl/TzvvCWQRgiJ795xk9" target="_blank" rel="noopener" style="color: var(--text-muted); text-decoration: none; transition: color var(--transition-fast);">
-                                Ver ubicación
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Olafito -->
-                    <div class="restaurant-card" style="background: var(--bg-glass); border: 1px solid var(--border-primary); border-radius: var(--radius-lg); padding: 1.5rem; transition: all var(--transition-base);">
-                        <h3 style="color: var(--color-accent); font-size: 1.4rem; font-weight: 700; margin-bottom: 0.5rem;">
-                            Fiambrería Olafito
-                        </h3>
-                        <p style="color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.5;">
-                            Fiambres artesanales y productos regionales de alta calidad. Perfecto para un picnic.
-                        </p>
-                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem; color: var(--text-muted);">
-                            <i class="fas fa-map-marker-alt" style="color: var(--color-primary);"></i>
-                            <a href="https://maps.app.goo.gl/B3pbJSS9uvpAAKoo6" target="_blank" rel="noopener" style="color: var(--text-muted); text-decoration: none; transition: color var(--transition-fast);">
-                                Ver ubicación
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div style="margin-top: 2rem; padding: 1.5rem; background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(5, 150, 105, 0.1)); border: 2px solid rgba(16, 185, 129, 0.3); border-radius: 15px; text-align: center;">
-                    <div style="font-size: 1.1rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.5rem;">
-                        <i class="fas fa-info-circle" style="margin-right: 8px; color: var(--color-accent);"></i>
-                        Para acceder a los descuentos
-                    </div>
-                    <p style="color: var(--text-secondary); font-size: 1rem;">
-                        Mencioná que participás del torneo de ajedrez al momento de realizar tu pedido
-                    </p>
-                </div>
-            </div>
-
-            <!-- Schedule Section -->
-            <div class="schedule-section" id="schedule">
-                <div class="info-card">
-                    <h2 class="card-title">
-                        <i class="fas fa-calendar" style="margin-right: 10px;"></i>
-                        Cronograma
-                    </h2>
-                    
-                    <div class="schedule-day">
-                        <div>
-                            <h3 class="day-title">Jueves 6:</h3>
-                            <ul class="schedule-list">
-                                <li>Apertura - 17 hs.</li>
-                                <li><strong>1° Ronda</strong> - 17:30 hs.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="schedule-day">
-                        <div>
-                            <h3 class="day-title">Viernes 7:</h3>
-                            <ul class="schedule-list">
-                                <li><em>Paseo lacustre</em> - 10 hs.</li>
-                                <li><strong>2° Ronda</strong> - 14 hs.</li>
-                                <li><strong>3° Ronda</strong> - 19 hs.</li>
-                                <li><em>Blitz</em> - 23:30 hs.</li>
-                            </ul>
-                        </div>
-                        <img style=" width: 250px;" src="nautica.webp" alt="Paseo lacustre" onerror="this.style.display='none'">
-                    </div>
-
-                    <div class="schedule-day">
-                        <div>
-                            <h3 class="day-title">Sábado 8:</h3>
-                            <ul class="schedule-list">
-                                <li><em>Laberinto</em> - 10 hs.</li>
-                                <li><strong>4° Ronda</strong> - 14 hs.</li>
-                                <li><strong>5° Ronda</strong> - 19 hs.</li>
-                            </ul>
-                        </div>
-                        <img src="laberinto.jpg" alt="Laberinto" style=" width: 250px;" onerror="this.style.display='none'">
-                    </div>
-
-                    <div class="schedule-day">
-                        <div>
-                            <h3 class="day-title">Domingo 9:</h3>
-                            <ul class="schedule-list">
-                                <li><strong>6° Ronda</strong> - 9 hs.</li>
-                                <li><strong>7° Ronda</strong> - 14 hs.</li>
-                                <li>Cierre del torneo - 18:30 hs.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div style="margin-top: 20px; text-align: center; font-size: var(--font-size-sm); opacity: 0.8; color: var(--text-secondary);">
-                        Aclaración: Las actividades complementarias están sujetas a modificaciones o reprogramaciones en función de las condiciones climáticas.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Prizes Section -->
-            <div class="prizes-section" id="prizes">
-                <div class="info-card">
-                    <h2 class="card-title prizes-title">$2.500.000 en Premios</h2>
-                    
-                    <div class="podium-prizes">
-                        <div class="prize-item first-place">
-                            <div class="prize-medal"><i class="fas fa-trophy"></i></div>
-                            <div class="prize-amount">$500.000</div>
-                        </div>
-                        <div class="prize-item second-place">
-                            <div class="prize-medal"><i class="fas fa-medal"></i></div>
-                            <div class="prize-amount">$340.000</div>
-                        </div>
-                        <div class="prize-item third-place">
-                            <div class="prize-medal"><i class="fas fa-medal"></i></div>
-                            <div class="prize-amount">$220.000</div>
-                        </div>
-                    </div>
-
-                    <div class="other-prizes">
-                        <div class="prize-row">
-                            <span class="position">4to:</span>
-                            <span class="amount">$200.000</span>
-                        </div>
-                        <div class="prize-row">
-                            <span class="position">5to:</span>
-                            <span class="amount">$150.000</span>
-                        </div>
-                        <div class="prize-row">
-                            <span class="position">6to:</span>
-                            <span class="amount">$140.000</span>
-                        </div>
-                        <div class="prize-row">
-                            <span class="position">7mo:</span>
-                            <span class="amount">$130.000</span>
-                        </div>
-                        <div class="prize-row">
-                            <span class="position">8vo:</span>
-                            <span class="amount">$120.000</span>
-                        </div>
-                    </div>
-
-                    <div class="special-prizes">
-                        <h3 class="special-title">Premios Especiales - $100.000</h3>
-                        <div class="special-list">
-                            <div class="special-item">Mejor jugadora</div>
-                            <div class="special-item">Mejor no rankeado</div>
-                            <div class="special-item">Mejor Socio Puelense</div>
-                            <div class="special-item">Mejor Sub18</div>
-                            <div class="special-item">Mejor Senior (S60)</div>
-                            <div class="special-item">Mejor Sub 2000</div>
-                            <div class="special-item">Mejor Sub 1700</div>
-                        </div>
-                    </div>
-                    <div style="margin-top: 20px; text-align: center; font-size: var(--font-size-sm); opacity: 0.8; color: var(--text-secondary);">
-                        Aclaración: Los premios no se dividen ni se acumulan, se entregarán por riguroso orden de clasificación.
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Registration Section -->
-            <div class="prizes-section" id="registration">
-                <div class="info-card">
-                    <h2 class="card-title">
-                        <i class="fas fa-user-plus" style="margin-right: 10px;"></i>
-                        Inscripción
-                    </h2>
-                    
-                    <div class="other-prizes">
-                        <div class="prize-row">
-                            <span class="position">Solo inscripción</span>
-                            <span class="amount">$40.000</span>
-                        </div>
-                        <div class="prize-row">
-                            <span class="position">Comidas (incluye 6 comidas)</span>
-                            <span class="amount">$30.000</span>
-                        </div>
-                        <div class="prize-row">
-                            <span class="position">Alojamiento en Cabañas Los Robles</span>
-                            <span class="amount">$55.000</span>
-                        </div>
-                    </div>
-
-                    <!-- Early Bird Special -->
-                    <div style="background: linear-gradient(135deg, rgba(255, 193, 7, 0.2), rgba(255, 165, 0, 0.1)); border: 2px solid rgba(255, 193, 7, 0.5); border-radius: 15px; padding: 1rem; margin-bottom: 1.5rem; text-align: center; position: relative; overflow: hidden;">
-                        <div style="position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(255, 193, 7, 0.1) 0%, transparent 50%); animation: rotate 8s linear infinite;"></div>
-                        <div style="position: relative; z-index: 1;">
-                            <div style="font-size: 1.3rem; font-weight: 800; color: #ffd700; margin-bottom: 0.5rem;">
-                                <i class="fas fa-bolt" style="margin-right: 8px;"></i>
-                                IMPORTANTE: Las inscripciones cierran el miércoles 5 de noviembre a las 21 hs.
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Pre-registration Button -->
-                    <div style="text-align: center; margin: 1.5rem 0;">
-                        <a href="https://1bq8kvkv.forms.app/4to-abierto-internacional-lago-puelo" class="btn btn-tournament" target="_blank" rel="noopener" style="background: linear-gradient(135deg, var(--color-accent), var(--color-primary)); border-color: var(--color-secondary); font-size: 1.1rem; padding: 1rem 2rem;">
-                            <i class="fas fa-user-check" style="margin-right: 10px;"></i>
-                            Preinscripción
-                        </a>
-                    </div>
-
-                    <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 10px; margin-top: 1.5rem; text-align: center; color: var(--text-primary);">
-                        <div style="margin-bottom: 0.5rem; color: var(--text-primary);"><strong>Alberto J. L. Conde</strong></div>
-                        <div style="margin-bottom: 0.5rem; color: var(--text-secondary);">CVU: 0000003100053256944556</div>
-                        <div style="margin-bottom: 0.5rem; color: var(--text-secondary);">Alias: <strong>Toti.Puelo.53</strong></div>
-                        <div style="font-size: 0.9rem; opacity: 0.8; color: var(--text-muted);">Mercado Pago</div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CTA Section -->
-            <div class="cta-section">
-                <h2 class="cta-title">¡Te esperamos!</h2>
-                <p class="cta-text">Únete a la experiencia única del ajedrez en la Patagonia</p>
+                <p style="text-align: center; font-size: 1.2rem; font-weight: 600; color: var(--color-primary); margin-top: 2rem; padding: 1.5rem; background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(5, 150, 105, 0.05)); border-radius: 10px;">
+                    Gracias por hacer de este torneo algo tan especial. Nos vemos en la próxima edición... ¡y que siga creciendo esta locura hermosa que es el ajedrez en Lago Puelo!
+                </p>
             </div>
         </div>
-    </main>
+    </div>
 
     <!-- Footer -->
     <footer style="background: var(--bg-primary); border-top: 1px solid var(--border-primary); padding: 2rem 0;">
