@@ -1,343 +1,1839 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4° Abierto Internacional Lago Puelo</title>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PXHWW2WLK3"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
-    gtag('config', 'G-PXHWW2WLK3');
-    </script>
-
-    <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "rgy1fryczb");
-    </script>
-
-    <title>FACH - Federación de ajedrez Chubutense</title>
-    <link rel="icon" type="image/png" href="/img/logos/fav.png"/>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!-- AOS Library -->
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-xl blue-background fixed-top">
-        <div class="container">
-            <a href="#">
-                <img src="./img/logos/fach-W.png" alt="Logo Federación" width="230px" class="logo">
-            </a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto align-items-center">
-                    <li class="nav-item"><a class="nav-link" href="#calendar">Calendario</a></li>
-                    <li class="nav-item"><a class="nav-link btn-yellow m-2" href="#clasificacion"><strong>Circuito</strong></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about-us">Federación</a></li> 
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Bienvenida -->
-    <section id="about" class="py-4 text-center pt-4">
-        <div class="container">
-            <h1 class="mb-2 mt-5 pt-5">Bienvenid@s a la Federación de Ajedrez Chubutense</h1>
-            <p class="lead">Promoviendo el ajedrez en Chubut, uniendo comunidades y apoyando el desarrollo de deportistas a través de eventos y competencias provinciales.</p>
-        </div>
-    </section>
-
-    <!-- Social & Club Icons -->
-    <div class="bg-light py-4 text-center">
-        <div class="container">
-            <h2 class="mb-2">Clubes afiliados</h2>
-            <p class="lead mb-4">Conocé las instituciones que componen nuestra federación</p>
-            <div class="row club-icons py-4">
-                <div class="col-6 col-md-4 col-lg-2 text-center hover-effect">
-                    <a href="puelo/index.html" target="_blank"><img src="img/logos/PUELO.png" alt="Club Lago Puelo" width="100" height="100"></a>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2 text-center hover-effect">
-                    <a href="https://www.circulodeajedrezdeesquel.ar" target="_blank"><img src="img/logos/ESQUEL.png" alt="Club Esquel" width="100" height="100"></a>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2 text-center hover-effect">
-                    <a href="madryn/index.html" target="_blank"><img src="img/logos/MADRYN.png" alt="Club Puerto Madryn" width="100" height="100"></a>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2 text-center hover-effect">
-                    <a href="trelew/index.html" target="_blank"><img src="img/logos/TRELEW.png" alt="Club Trelew" width="100" height="100"></a>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2 text-center hover-effect">
-                    <a href="https://www.elmundodelajedrez.com/" target="_blank"><img src="img/logos/CR.png" alt="Club Comodoro Rivadavia" width="100" height="100"></a>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2 text-center hover-effect">
-                    <a href="https://circuloajedrezrawson.blogspot.com/" target="_blank"><img src="img/logos/RAWSON.png" alt="Club Rawson" width="100" height="100"></a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Sección de Redes Sociales y WhatsApp -->
-    <section id="redes" class="py-5 blue-background">
-        <div class="container">
-            <h2 class="text-center mb-2 text-white fade-up">Mantente Conectado</h2>
-            <p class="lead text-center text-white mb-5 fade-up">Únete a nuestra comunidad ajedrecística</p>
+    <style>
+        :root {
+            --color-bronze: #cd7f32;
+            --color-gold: #ffd700;
+            --color-silver: #c0c0c0;
+            --color-primary: #10b981;
+            --color-secondary: #059669;
+            --color-accent: #34d399;
+            --color-warning: #f59e0b;
             
-            <!-- WhatsApp Principal -->
-            <div class="row justify-content-center mb-4 fade-up">
-                <div class="col-lg-8 col-md-10">
-                    <div class="text-center p-5 rounded" style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px);">
-                        <div class="mb-4">
-                            <div class="d-inline-flex align-items-center justify-content-center rounded-circle mb-3" 
-                                style="width: 100px; height: 100px; background: #25D366;">
-                                <svg width="50" height="50" fill="white" viewBox="0 0 24 24">
-                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.525 3.585"/>
-                                </svg>
+            /* Background Colors */
+            --bg-primary: #050814;
+            --bg-secondary: #0d1020;
+            --bg-tertiary: #1a1d35;
+            --bg-glass: rgba(255, 255, 255, 0.05);
+            --bg-glass-hover: rgba(255, 255, 255, 0.1);
+            --bg-glass-subtle: rgba(255, 255, 255, 0.03);
+            
+            /* Text Colors */
+            --text-primary: #ffffff;
+            --text-secondary: #e2e8f0;
+            --text-muted: #a8b3ff;
+            --text-accent: #4ade80;
+            
+            /* Border Colors */
+            --border-primary: rgba(255, 255, 255, 0.1);
+            --border-secondary: rgba(255, 255, 255, 0.2);
+            --border-accent: rgba(79, 70, 229, 0.3);
+            
+            /* Typography */
+            --font-family-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --font-size-xs: 0.875rem;
+            --font-size-sm: 1rem;
+            --font-size-base: 1.125rem;
+            --font-size-lg: 1.25rem;
+            --font-size-xl: 1.5rem;
+            --font-size-2xl: 1.875rem;
+            --font-size-3xl: 2.25rem;
+            --font-size-4xl: 3rem;
+            --font-size-5xl: 3.5rem;
+            
+            --font-weight-light: 300;
+            --font-weight-normal: 400;
+            --font-weight-medium: 500;
+            --font-weight-semibold: 600;
+            --font-weight-bold: 700;
+            --font-weight-extrabold: 800;
+            
+            --line-height-tight: 1.25;
+            --line-height-base: 1.5;
+            --line-height-relaxed: 1.6;
+            
+            /* Spacing */
+            --space-xs: 0.25rem;
+            --space-sm: 0.5rem;
+            --space-md: 1rem;
+            --space-lg: 1.5rem;
+            --space-xl: 2rem;
+            --space-2xl: 3rem;
+            --space-3xl: 4rem;
+            
+            /* Border Radius */
+            --radius-sm: 8px;
+            --radius-md: 10px;
+            --radius-lg: 15px;
+            --radius-xl: 20px;
+            
+            /* Shadows */
+            --shadow-sm: 0 4px 8px rgba(0, 0, 0, 0.1);
+            --shadow-md: 0 10px 20px rgba(0, 0, 0, 0.2);
+            --shadow-lg: 0 15px 30px rgba(0, 0, 0, 0.2);
+            --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.3);
+            
+            /* Transitions */
+            --transition-fast: 0.2s ease;
+            --transition-base: 0.3s ease;
+            --transition-slow: 0.5s ease;
+            
+            /* Gradients */
+            --gradient-primary: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 50%, var(--bg-tertiary) 100%);
+            --gradient-text-primary: linear-gradient(45deg, var(--text-primary), var(--text-muted));
+            --gradient-text-accent: linear-gradient(45deg, var(--color-accent), var(--color-secondary));
+            --gradient-gold: linear-gradient(45deg, var(--color-gold), #ffed4e);
+            --gradient-glass: linear-gradient(135deg, var(--bg-glass), rgba(255, 255, 255, 0.02));
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .prizes-section, .schedule-section{
+            scroll-margin-top: 40px;
+        }
+
+        body {
+            font-family: var(--font-family-primary);
+            background: var(--gradient-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            overflow-x: hidden;
+            font-size: var(--font-size-base);
+            line-height: var(--line-height-base);
+        }
+
+        /* Animated background particles */
+        .bg-particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.1;
+        }
+
+        .particle {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: var(--text-primary);
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(180deg); }
+        }
+
+        /* Header */
+        .header {
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-primary);
+            padding: var(--space-xl) 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--space-xl);
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            gap: var(--space-xl);
+            animation: slideInUp 1s ease-out;
+        }
+
+        .logo {
+            width: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            transition: transform var(--transition-base);
+            opacity: 0.8;
+        }
+
+        .logo::after {
+            content: '♛';
+            font-size: var(--font-size-4xl);
+            color: var(--bg-primary);
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+
+        .title-section h1 {
+            font-size: var(--font-size-5xl);
+            font-weight: var(--font-weight-extrabold);
+            margin-bottom: var(--space-sm);
+            background: var(--gradient-text-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: var(--shadow-sm);
+        }
+
+        .subtitle {
+            font-size: var(--font-size-lg);
+            opacity: 0.9;
+            font-weight: var(--font-weight-light);
+            color: var(--text-secondary);
+        }
+
+        /* Tournament Buttons Styles */
+        .tournament-buttons {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-lg);
+            padding: var(--space-xl) 0;
+            margin: var(--space-sm) 0;
+            animation: slideInUp 1.2s ease-out 0.3s both;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: var(--space-lg) var(--space-xl);
+            border: none;
+            border-radius: var(--radius-lg);
+            font-size: var(--font-size-base);
+            font-weight: var(--font-weight-semibold);
+            text-decoration: none;
+            cursor: pointer;
+            transition: all var(--transition-base);
+            position: relative;
+            overflow: hidden;
+            min-width: 180px;
+            box-shadow: var(--shadow-md);
+            backdrop-filter: blur(20px);
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left var(--transition-slow);
+        }
+
+        .btn-tournament {
+            background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+            color: rgb(11, 11, 11);
+            border: 2px solid var(--color-accent);
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn-secondary {
+            background: linear-gradient(135deg, var(--bg-glass), var(--bg-glass-hover));
+            color: var(--text-secondary);
+            border: 2px solid var(--border-secondary);
+        }
+
+        .btn i {
+            font-size: 1.1em;
+            transition: transform var(--transition-base);
+        }
+
+        /* Live Stream Buttons */
+        .live-stream-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: var(--space-lg);
+            padding: var(--space-xl) 0 0 0;
+            animation: fadeInDown 1s ease-out 0.3s both;
+        }
+
+        .live-btn {
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+            padding: var(--space-md) var(--space-xl);
+            border-radius: var(--radius-lg);
+            font-size: var(--font-size-base);
+            font-weight: var(--font-weight-semibold);
+            text-decoration: none;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: all var(--transition-base);
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+        }
+
+        .live-btn::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            transform: translate(-50%, -50%);
+            transition: width var(--transition-slow), height var(--transition-slow);
+        }
+
+        .live-btn:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+
+        .live-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .live-btn i {
+            font-size: 1.5em;
+            z-index: 1;
+        }
+
+        .live-btn span {
+            z-index: 1;
+        }
+
+        .live-btn-youtube {
+            background: linear-gradient(135deg, #FF0000, #CC0000);
+        }
+
+        .live-btn-youtube:hover {
+            background: linear-gradient(135deg, #FF0000, #FF3333);
+        }
+
+        .live-btn-twitch {
+            background: linear-gradient(135deg, #9146FF, #6441A5);
+        }
+
+        .live-btn-twitch:hover {
+            background: linear-gradient(135deg, #9146FF, #A970FF);
+        }
+
+        .live-btn-lichess {
+            background: linear-gradient(135deg, #161512, #2a2621);
+        }
+
+        .live-btn-lichess:hover {
+            background: linear-gradient(135deg, #161512, #3a3631);
+        }
+
+        .live-btn-lichess img {
+            width: 1.5em;
+            height: 1.5em;
+            object-fit: contain;
+            z-index: 1;
+        }
+
+        .live-indicator {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background: #00ff00;
+            border-radius: 50%;
+            margin-right: var(--space-xs);
+            animation: pulse-live 2s ease-in-out infinite;
+            box-shadow: 0 0 10px #00ff00;
+        }
+
+        @keyframes pulse-live {
+            0%, 100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0.6;
+                transform: scale(1.2);
+            }
+        }
+
+        /* Main content */
+        .main-content {
+            padding-bottom: var(--space-sm);
+            animation: fadeIn 1.5s ease-out 0.5s both;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: var(--space-2xl);
+            margin-bottom: var(--space-2xl);
+        }
+
+        .info-card {
+            background: var(--bg-glass);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--border-primary);
+            border-radius: var(--radius-xl);
+            padding: var(--space-xl);
+            position: relative;
+            overflow: hidden;
+            transition: all var(--transition-base);
+            color: var(--text-primary);
+        }
+
+        .info-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--color-primary), var(--color-secondary), var(--color-accent));
+            border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+        }
+
+        .card-title {
+            font-size: var(--font-size-2xl);
+            font-weight: var(--font-weight-bold);
+            margin-bottom: var(--space-lg);
+            color: var(--text-muted);
+        }
+
+        .organizers {
+            margin-bottom: var(--space-xl);
+            color: var(--text-primary);
+        }
+
+        .organizer {
+            margin-bottom: var(--space-sm);
+            font-weight: var(--font-weight-semibold);
+            color: var(--text-secondary);
+        }
+
+        .arbitro {
+            margin-top: var(--space-lg);
+            padding-top: var(--space-lg);
+            border-top: 1px solid var(--border-primary);
+            color: var(--text-primary);
+        }
+
+        .contact-info {
+            margin-top: var(--space-xs);
+            color: var(--text-primary);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            margin-bottom: var(--space-md);
+            padding: var(--space-sm);
+            border-radius: var(--radius-md);
+            transition: all var(--transition-base);
+            color: var(--text-secondary);
+        }
+
+        .contact-icon {
+            width: 20px;
+            height: 20px;
+            fill: var(--color-primary);
+        }
+
+        /* Right column content */
+        .event-details {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-xl);
+        }
+
+        .detail-section {
+            background: var(--bg-glass);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--border-primary);
+            border-radius: var(--radius-lg);
+            padding: var(--space-lg);
+            position: relative;
+            transition: all var(--transition-base);
+            align-items: start;
+            height: fit-content;
+            color: var(--text-primary);
+        }
+
+        .detail-title {
+            font-size: var(--font-size-xl);
+            font-weight: var(--font-weight-semibold);
+            color: var(--color-accent);
+            margin-bottom: var(--space-md);
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+        }
+
+        .detail-title::before {
+            content: '▶';
+            color: var(--color-secondary);
+            transition: transform var(--transition-base);
+        }
+
+        .detail-text {
+            line-height: var(--line-height-relaxed);
+            opacity: 0.9;
+            color: var(--text-secondary);
+        }
+        
+        .detail-image {
+            width: 100%;
+            height: auto;
+            border-radius: var(--radius-lg);
+            margin-top: var(--space-md);
+            box-shadow: var(--shadow-sm);
+        }
+
+        /* Pepe section styles */
+        .pepe-section {
+            overflow: visible;
+        }
+        
+        .pepe-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-lg);
+            align-items: flex-start;
+        }
+        
+        .pepe-text {
+            flex: 1;
+            min-width: 250px;
+        }
+        
+        .pepe-image-container {
+            flex-shrink: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        
+        .pepe-image {
+            width: 170px;
+            object-fit: cover;
+            box-shadow: var(--shadow-md);
+            transition: transform var(--transition-base);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            text-align: center;
+            padding: 3rem;
+            background: var(--bg-secondary);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            margin-top: 3rem;
+            position: relative;
+            overflow: hidden;
+            color: var(--text-primary);
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(79, 70, 229, 0.1) 0%, transparent 50%);
+            animation: rotate 10s linear infinite;
+        }
+
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0.7;
+                transform: scale(1.1);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .cta-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #4ade80, #06b6d4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-text {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+            color: var(--text-secondary);
+        }
+
+        /* Animations */
+        @keyframes slideInUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Schedule Styles */
+        .schedule-section, .prizes-section {
+            margin: 3rem 0;
+        }
+
+        .schedule-day {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: var(--bg-tertiary);
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            display: flex;
+            justify-content: space-between;
+            color: var(--text-primary);
+        }
+
+        .schedule-day img {
+            width: 200px;
+            height: fit-content;
+            margin-left: 1rem;
+            border-radius: 10px;
+        }
+
+        .day-title {
+            color: var(--color-primary);
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .schedule-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .schedule-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            color: var(--text-secondary);
+        }
+
+        .schedule-list li:last-child {
+            border-bottom: none;
+        }
+
+        .schedule-list li strong {
+            color: var(--color-primary);
+            font-weight: 700;
+        }
+
+        .schedule-list li em {
+            color: var(--color-warning);
+            font-style: normal;
+            font-weight: 600;
+        }
+
+        /* Prizes Styles */
+        .prizes-title {
+            text-align: center;
+            font-size: 2.2rem;
+            background: var(--color-accent);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 2rem;
+        }
+
+        .podium-prizes {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .prize-item {
+            text-align: center;
+            padding: 1.5rem;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            min-width: 150px;
+            color: var(--text-primary);
+        }
+
+        .first-place {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(255, 193, 7, 0.1));
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            transform: scale(1.1);
+        }
+
+        .second-place {
+            background: linear-gradient(135deg, rgba(192, 192, 192, 0.2), rgba(169, 169, 169, 0.1));
+            border: 2px solid rgba(192, 192, 192, 0.3);
+        }
+
+        .third-place {
+            background: linear-gradient(135deg, rgba(205, 127, 50, 0.2), rgba(184, 115, 51, 0.1));
+            border: 2px solid rgba(205, 127, 50, 0.3);
+        }
+
+        .prize-medal {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .prize-amount {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #ffffff;
+        }
+
+        .other-prizes {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 15px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            color: var(--text-primary);
+        }
+
+        .prize-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            color: var(--text-secondary);
+        }
+
+        .prize-row:last-child {
+            border-bottom: none;
+        }
+
+        .position {
+            font-weight: 600;
+            color: #a8b3ff;
+        }
+
+        .amount {
+            font-weight: 700;
+            color: var(--color-accent);
+            font-size: 1.1rem;
+        }
+
+        .special-prizes {
+            background: linear-gradient(135deg, rgba(79, 70, 229, 0.1), rgba(6, 182, 212, 0.05));
+            border-radius: 15px;
+            padding: 1.5rem;
+            border: 1px solid rgba(79, 70, 229, 0.2);
+            color: var(--text-primary);
+        }
+
+        .special-title {
+            text-align: center;
+            color: var(--color-accent);
+            font-size: 1.4rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        .special-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 0.75rem;
+        }
+
+        .special-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 0.75rem 1rem;
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            font-weight: 500;
+            color: var(--text-secondary);
+        }
+
+        /* Chess.com and Chessable Prizes */
+        .platform-prizes {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(6, 182, 212, 0.05));
+            border-radius: 15px;
+            padding: 1.5rem;
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            margin-top: 1.5rem;
+        }
+
+        .platform-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .platform-logo {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+        }
+
+        .platform-title {
+            text-align: center;
+            color: var(--color-accent);
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .prize-category {
+            margin-bottom: 1.5rem;
+        }
+
+        .prize-category:last-child {
+            margin-bottom: 0;
+        }
+
+        .category-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.75rem;
+            text-align: center;
+        }
+
+        .prize-details {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .prize-detail-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 0.75rem 1rem;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .prize-position {
+            font-weight: 500;
+            color: var(--text-secondary);
+        }
+
+        .prize-reward {
+            font-weight: 600;
+            color: var(--color-accent);
+        }
+
+        .diamond-prizes {
+            margin-bottom: 1.5rem;
+        }
+
+        .diamond-section {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 1rem;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+
+        .diamond-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .diamond-tier {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--color-gold);
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+
+        .diamond-recipients {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            justify-content: center;
+        }
+
+        .diamond-item {
+            background: rgba(255, 215, 0, 0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        /* ======= HOVER EFFECTS SOLO PARA DESKTOP ======= */
+        @media (hover: hover) and (pointer: fine) {
+            .logo:hover {
+                transform: scale(1.05) rotate(2deg);
+            }
+
+            .btn:hover::before {
+                left: 100%;
+            }
+
+            .btn-tournament:hover {
+                transform: translateY(-3px) scale(1.02);
+                box-shadow: var(--shadow-xl);
+                background: linear-gradient(135deg, var(--color-secondary), var(--color-accent));
+                border-color: var(--color-primary);
+            }
+
+            .btn-tournament:active {
+                transform: translateY(-1px) scale(0.98);
+                box-shadow: var(--shadow-sm);
+            }
+
+            .btn-secondary:hover {
+                background: linear-gradient(135deg, var(--bg-glass-hover), rgba(255, 255, 255, 0.15));
+                color: var(--text-primary);
+                border-color: var(--color-accent);
+                transform: translateY(-3px) scale(1.02);
+                box-shadow: var(--shadow-xl);
+            }
+
+            .btn-secondary:active {
+                transform: translateY(-1px) scale(0.98);
+                box-shadow: var(--shadow-sm);
+            }
+
+            .btn:hover i {
+                transform: scale(1.2);
+            }
+
+            .info-card:hover {
+                transform: translateY(-5px);
+                box-shadow: var(--shadow-lg);
+                border-color: var(--border-secondary);
+            }
+
+            .contact-item:hover {
+                background: var(--bg-glass-hover);
+                transform: translateX(5px);
+                color: var(--text-primary);
+            }
+
+            .detail-section:hover {
+                transform: translateY(-3px);
+                box-shadow: var(--shadow-lg);
+            }
+
+            .detail-section:hover .detail-title::before {
+                transform: rotate(90deg);
+            }
+
+            .schedule-day:hover {
+                background: rgba(255, 255, 255, 0.08);
+                transform: translateX(5px);
+            }
+
+            .schedule-list li:hover {
+                padding-left: 1rem;
+                color: var(--color-primary);
+            }
+
+            .prize-item:hover {
+                transform: scale(1.05) translateY(-5px);
+                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            }
+
+            .first-place:hover {
+                transform: scale(1.15) translateY(-5px);
+            }
+
+            .prize-row:hover {
+                background: rgba(255, 255, 255, 0.05);
+                padding-left: 1rem;
+                border-radius: 8px;
+                color: var(--text-primary);
+            }
+
+            .special-item:hover {
+                background: rgba(255, 255, 255, 0.1);
+                transform: translateY(-2px);
+                color: #4ade80;
+            }
+
+            .restaurant-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+                border-color: var(--border-secondary);
+            }
+
+            .restaurant-card a:hover {
+                color: var(--color-accent) !important;
+            }
+        }
+
+        /* ======= ESTILOS MÓVILES ======= */
+        @media (max-width: 768px) {
+            /* Hide particles on mobile for performance */
+            .bg-particles {
+                display: none;
+            }
+            
+            /* Header Mobile */
+            .header {
+                padding: var(--space-lg) 0;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+                gap: var(--space-lg);
+            }
+
+            .title-section h1 {
+                font-size: var(--font-size-3xl);
+                line-height: 1.2;
+            }
+            
+            .subtitle {
+                font-size: var(--font-size-base);
+            }
+
+            .container {
+                padding: 0 var(--space-md);
+            }
+
+            .logo {
+                width: 100px;
+            }
+
+            .logo::after {
+                font-size: var(--font-size-3xl);
+            }
+
+            /* Live Stream Buttons Mobile */
+            .live-stream-container {
+                flex-direction: column;
+                gap: var(--space-md);
+                padding: var(--space-md) 0;
+            }
+
+            .live-btn {
+                width: 90%;
+                max-width: 320px;
+                justify-content: center;
+                padding: var(--space-md) var(--space-lg);
+                font-size: var(--font-size-sm);
+            }
+
+            .live-btn i {
+                font-size: 1.3em;
+            }
+
+            /* Tournament Buttons Mobile */
+            .tournament-buttons {
+                flex-direction: column;
+                align-items: center;
+                gap: var(--space-md);
+                padding: var(--space-lg) var(--space-md);
+                margin: var(--space-lg) 0;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 320px;
+                padding: var(--space-md) var(--space-lg);
+                font-size: var(--font-size-sm);
+                min-width: auto;
+            }
+
+            /* Content Grid Mobile */
+            .content-grid {
+                grid-template-columns: 1fr;
+                gap: var(--space-lg);
+                margin-bottom: var(--space-lg);
+            }
+
+            /* Reorder sections on mobile */
+            .event-details.organization-info {
+                order: 2;
+            }
+
+            .event-details.main-info {
+                order: 1;
+            }
+
+            /* Cards Mobile */
+            .info-card, .detail-section {
+                padding: var(--space-lg);
+                border-radius: var(--radius-lg);
+            }
+
+            .card-title {
+                font-size: var(--font-size-xl);
+                margin-bottom: var(--space-md);
+            }
+
+            .detail-title {
+                font-size: var(--font-size-lg);
+                margin-bottom: var(--space-sm);
+            }
+
+            /* Pepe section mobile */
+            .pepe-content {
+                flex-direction: column;
+                align-items: center;
+                gap: var(--space-lg);
+            }
+            
+            .pepe-text {
+                min-width: auto;
+            }
+            
+            .pepe-image-container {
+                order: -1;
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            .pepe-image {
+                width: 100%;
+                height: auto;
+                aspect-ratio: 1;
+                max-width: 250px;
+                margin: 0 auto;
+                display: block;
+            }
+
+            /* Schedule Mobile */
+            .schedule-day {
+                flex-direction: column;
+                padding: var(--space-lg);
+                margin-bottom: var(--space-lg);
+            }
+
+            .schedule-day img {
+                width: 100%;
+                max-width: 200px;
+                margin: var(--space-md) 0 0 0;
+                align-self: center;
+            }
+
+            .day-title {
+                font-size: var(--font-size-lg);
+                margin-bottom: var(--space-sm);
+            }
+
+            .schedule-list li {
+                font-size: var(--font-size-sm);
+                padding: var(--space-xs) 0;
+            }
+
+            /* Prizes Mobile */
+            .prizes-title {
+                font-size: var(--font-size-2xl);
+                margin-bottom: var(--space-lg);
+            }
+
+            .podium-prizes {
+                flex-direction: column;
+                align-items: center;
+                gap: var(--space-lg);
+            }
+
+            .prize-item {
+                min-width: 200px;
+                padding: var(--space-lg);
+            }
+
+            .first-place {
+                transform: none;
+                order: 1;
+            }
+
+            .second-place {
+                order: 2;
+            }
+
+            .third-place {
+                order: 3;
+            }
+
+            .prize-medal {
+                font-size: 2.5rem;
+            }
+
+            .prize-amount {
+                font-size: var(--font-size-xl);
+            }
+
+            /* Special Prizes Mobile */
+            .special-list {
+                grid-template-columns: 1fr;
+                gap: var(--space-sm);
+            }
+
+            .special-item {
+                padding: var(--space-sm) var(--space-md);
+                font-size: var(--font-size-sm);
+            }
+
+            .special-title {
+                font-size: var(--font-size-lg);
+                margin-bottom: var(--space-md);
+            }
+
+            /* Other Prizes Mobile */
+            .other-prizes {
+                padding: var(--space-lg);
+            }
+
+            .prize-row {
+                padding: var(--space-sm) 0;
+                font-size: var(--font-size-sm);
+            }
+
+            /* CTA Mobile */
+            .cta-section {
+                padding: var(--space-xl);
+                margin-top: var(--space-xl);
+            }
+
+            .cta-title {
+                font-size: var(--font-size-2xl);
+            }
+
+            .cta-text {
+                font-size: var(--font-size-base);
+                margin-bottom: var(--space-lg);
+            }
+
+            /* Contact Items Mobile */
+            .contact-item {
+                padding: var(--space-sm);
+                font-size: var(--font-size-sm);
+                flex-wrap: wrap;
+            }
+
+            .contact-icon {
+                width: 18px;
+                height: 18px;
+                flex-shrink: 0;
+            }
+
+            /* Image Optimizations Mobile */
+            .detail-image {
+                margin-top: var(--space-sm);
+            }
+
+            /* Performance optimizations for mobile */
+            .btn::before {
+                display: none;
+            }
+
+            .cta-section::before {
+                animation: none;
+            }
+
+            /* Reduce transition duration for better performance */
+            * {
+                transition-duration: 0.2s !important;
+            }
+
+            /* Simplify gradients for better performance */
+            .btn-tournament {
+                background: var(--color-primary);
+            }
+
+            .btn-secondary {
+                background: var(--bg-glass);
+            }
+
+            .first-place {
+                background: rgba(255, 215, 0, 0.1);
+            }
+
+            .second-place {
+                background: rgba(192, 192, 192, 0.1);
+            }
+
+            .third-place {
+                background: rgba(205, 127, 50, 0.1);
+            }
+        }
+
+        /* Extra small mobile devices */
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 var(--space-lg);
+            }
+
+            .header {
+                padding: var(--space-md) 0;
+            }
+
+            .title-section h1 {
+                font-size: var(--font-size-2xl);
+            }
+
+            .btn {
+                padding: var(--space-sm) var(--space-md);
+                font-size: var(--font-size-xs);
+                max-width: 280px;
+            }
+
+            .btn i {
+                margin-right: 6px !important;
+                font-size: 1em;
+            }
+
+            .tournament-buttons {
+                padding: var(--space-md) var(--space-sm);
+            }
+
+            .info-card, .detail-section {
+                padding: var(--space-md);
+            }
+
+            .card-title {
+                font-size: var(--font-size-lg);
+            }
+
+            .detail-title {
+                font-size: var(--font-size-base);
+            }
+
+            .schedule-day {
+                padding: var(--space-md);
+            }
+
+            .day-title {
+                font-size: var(--font-size-base);
+            }
+
+            .prizes-title {
+                font-size: var(--font-size-xl);
+            }
+
+            .prize-item {
+                min-width: 180px;
+                padding: var(--space-md);
+            }
+
+            .prize-medal {
+                font-size: 2rem;
+            }
+
+            .prize-amount {
+                font-size: var(--font-size-lg);
+            }
+
+            .cta-title {
+                font-size: var(--font-size-xl);
+            }
+
+            .cta-text {
+                font-size: var(--font-size-sm);
+            }
+
+            .cta-section {
+                padding: var(--space-lg);
+            }
+
+            .pepe-image-container {
+                width: 100%;
+                max-width: 250px;
+            }
+
+            .pepe-image {
+                width: 100%;
+                height: auto;
+                aspect-ratio: 1;
+                max-width: 200px;
+            }
+
+            /* Reduce spacing for very small screens */
+            .schedule-section, .prizes-section {
+                margin: var(--space-xl) 0;
+            }
+
+            .main-content {
+                padding-bottom: var(--space-xl);
+            }
+        }
+
+        /* Landscape mobile optimization */
+        @media (max-width: 768px) and (orientation: landscape) {
+            .header {
+                padding: var(--space-md) 0;
+            }
+
+            .header-content {
+                flex-direction: row;
+                justify-content: center;
+                gap: var(--space-lg);
+            }
+
+            .title-section h1 {
+                font-size: var(--font-size-2xl);
+            }
+
+            .tournament-buttons {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                padding: var(--space-md) 0;
+            }
+
+            .btn {
+                flex: 1;
+                min-width: 140px;
+                max-width: 160px;
+                padding: var(--space-sm) var(--space-md);
+                font-size: var(--font-size-xs);
+            }
+        }
+
+        /* Touch-friendly improvements */
+        @media (hover: none) and (pointer: coarse) {
+            .btn {
+                min-height: 44px;
+            }
+
+            .contact-item {
+                min-height: 44px;
+                display: flex;
+                align-items: center;
+            }
+
+            .schedule-list li {
+                min-height: 40px;
+                display: flex;
+                align-items: center;
+            }
+
+            .prize-row {
+                min-height: 44px;
+            }
+
+            .special-item {
+                min-height: 44px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        /* Waves decoration */
+        .waves {
+            position: absolute;
+            right: 2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0.1;
+            font-size: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .waves {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Animated background particles -->
+    <div class="bg-particles" id="particles"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <img class="logo" src="logo.png" alt="Logo Torneo" onerror="this.style.display='none'">
+                <div class="title-section">
+                    <h1>4° ABIERTO<br>INTERNACIONAL<br>LAGO PUELO</h1>
+                    <p class="subtitle">Del 6 al 9 de noviembre</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Live Stream Buttons
+    <div class="container">
+        <div class="live-stream-container">
+            <a href="#" class="live-btn live-btn-youtube" target="_blank" rel="noopener noreferrer">
+                <span class="live-indicator"></span>
+                <i class="fab fa-youtube"></i>
+                <span>EN VIVO - YouTube</span>
+            </a>
+            <a href="#" class="live-btn live-btn-twitch" target="_blank" rel="noopener noreferrer">
+                <span class="live-indicator"></span>
+                <i class="fab fa-twitch"></i>
+                <span>EN VIVO - Twitch</span>
+            </a>
+            <a href="https://lichess.org/broadcast/4-torneo-abierto-irt-lago-puelo-del-6-al-9-de-nov/ronda-1/0IHxh1MK" class="live-btn live-btn-lichess" target="_blank" rel="noopener noreferrer">
+                <span class="live-indicator"></span>
+                <img src="img/lichess.png" alt="Lichess">
+                <span>EN VIVO - Lichess</span>
+            </a>
+        </div>
+    </div> -->
+
+    <!-- Important Notice 
+    <div class="container">
+        <div style="background: linear-gradient(135deg, rgba(255, 69, 0, 0.25), rgba(255, 140, 0, 0.15)); border: 2px solid rgba(255, 69, 0, 0.6); border-radius: 15px; padding: 1.5rem; margin: 2rem auto; text-align: center; position: relative; overflow: hidden; max-width: 900px; box-shadow: 0 10px 30px rgba(255, 69, 0, 0.3); animation: fadeInDown 0.8s ease-out both;">
+            <div style="position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(255, 140, 0, 0.15) 0%, transparent 50%); animation: rotate 8s linear infinite;"></div>
+            <div style="position: relative; z-index: 1;">
+                <div style="display: flex; align-items: center; justify-content: center; gap: 1rem; margin-bottom: 1rem;">
+                    <i class="fas fa-exclamation-triangle" style="font-size: 2rem; color: #ff6b35; animation: pulse 2s ease-in-out infinite;"></i>
+                    <div style="font-size: 1.5rem; font-weight: 800; color: #ff6b35; text-transform: uppercase; letter-spacing: 1px;">
+                        Información Importante
+                    </div>
+                    <i class="fas fa-exclamation-triangle" style="font-size: 2rem; color: #ff6b35; animation: pulse 2s ease-in-out infinite;"></i>
+                </div>
+                <div style="font-size: 1.2rem; font-weight: 600; color: var(--text-primary); line-height: 1.6;">
+                    Las inscripciones cierran el <strong style="color: #ff6b35;">miércoles 5 de noviembre a las 21 hs</strong>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="tournament-buttons">
+        <a href="https://s3.chess-results.com/tnr1224490.aspx?lan=2&art=1&rd=7&turdet=YES&flag=30&SNode=S0" class="btn btn-tournament btn-secondary" target="_blank" rel="noopener">
+            <i class="fas fa-trophy" style="margin-right: 10px;"></i> Clasificación Final
+        </a>
+        <a href="#photos" class="btn btn-tournament">
+            <i class="fas fa-camera" style="margin-right: 10px;"></i> Álbum de Fotos
+        </a>
+        <a href="https://instagram.com/ajedrezlp" class="btn btn-tournament btn-secondary" target="_blank" rel="noopener">
+            <i class="fab fa-instagram" style="margin-right: 10px;"></i> Instagram
+        </a>
+        <a href="https://www.facebook.com/ajedrezlp" class="btn btn-tournament" target="_blank" rel="noopener">
+            <i class="fab fa-facebook" style="margin-right: 10px;"></i> Facebook
+        </a>
+        <a href="https://www.youtube.com/@ajedrezlp" class="btn btn-tournament btn-secondary" target="_blank" rel="noopener">
+            <i class="fab fa-youtube" style="margin-right: 10px;"></i> YouTube
+        </a>
+    </div>
+
+    <!-- Tournament Summary -->
+    <div class="container" style="margin-top: 3rem; margin-bottom: 3rem;">
+        <div class="info-card">
+            <h2 class="card-title" style="text-align: center; font-size: 2.5rem; margin-bottom: 2rem;">
+                <i class="fas fa-trophy" style="margin-right: 10px; color: var(--color-accent);"></i>
+                ¡El GM Pepe Cuenca, campeón del 4° Abierto Internacional de Lago Puelo!
+            </h2>
+
+            <div style="display: flex; flex-direction: column; gap: 2rem; align-items: center;">
+                <!-- En desktop: imagen a la izquierda, texto a la derecha -->
+                <div style="display: grid; grid-template-columns: 1fr; gap: 2rem; align-items: start;">
+                    <div style="text-align: center;">
+                        <img src="campeon.webp" alt="GM Pepe Cuenca - Campeón del 4° Abierto Internacional de Lago Puelo" style="max-width: 100%; height: auto; border-radius: 15px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); border: 3px solid rgba(16, 185, 129, 0.3);">
+                    </div>
+
+                    <div style="line-height: 1.8; color: var(--text-secondary); font-size: 1.1rem;">
+                        <p style="margin-bottom: 1.5rem;">
+                            Este domingo 9 de noviembre finalizó una nueva edición de este torneo que, año tras año, sigue creciendo de manera increíble. En esta ocasión, contamos con la presencia estelar del <strong>Gran Maestro internacional José "Pepe" Cuenca</strong>, y con un nuevo récord de participación: <strong>¡110 jugadores de todo el país nos eligieron para compartir este evento único!</strong>
+                        </p>
+
+                        <p style="margin-bottom: 1.5rem;">
+                            El torneo cerró con un espectacular asado para 40 personas, preparado por Diego y Sandro, a quienes agradecemos de todo corazón. La jornada de cierre fue una verdadera fiesta, con partidas de pasapiezas, metegol y ping pong que se extendieron <strong>¡hasta las 4 de la mañana!</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <style>
+                @media (min-width: 768px) {
+                    .info-card > div > div {
+                        grid-template-columns: 400px 1fr !important;
+                    }
+                    .info-card img[src="campeon.webp"] {
+                        max-width: 400px !important;
+                    }
+                }
+            </style>
+
+            <div style="line-height: 1.8; color: var(--text-secondary); font-size: 1.1rem; margin-top: 2rem;">
+
+                <div id="photos" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(5, 150, 105, 0.05)); border: 2px solid rgba(16, 185, 129, 0.3); border-radius: 15px; padding: 1.5rem; margin: 2rem 0;">
+                    <h3 style="color: var(--color-primary); margin-bottom: 1.5rem; font-size: 1.4rem; text-align: center;">
+                        <i class="fas fa-camera" style="margin-right: 10px;"></i>Álbumes de Fotos
+                    </h3>
+
+                    <p style="text-align: center; margin-bottom: 2rem; font-size: 1.05rem;">
+                        Ya están disponibles los álbumes de fotos del evento. Agradecemos especialmente a quienes capturaron los mejores momentos del torneo. ¡Gracias por su mirada única!
+                    </p>
+
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+                        <!-- @camilapitrelli -->
+                        <div style="background: var(--bg-glass); border: 1px solid rgba(16, 185, 129, 0.2); border-radius: 10px; padding: 1.2rem; position: relative; overflow: hidden;">
+                            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 3px; background: linear-gradient(90deg, var(--color-primary), var(--color-accent));"></div>
+                            <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem;">
+                                <i class="fab fa-instagram" style="font-size: 1.8rem; color: #E1306C;"></i>
+                                <div style="flex: 1;">
+                                    <a href="https://instagram.com/camilapitrelli" target="_blank" rel="noopener" style="font-weight: 700; color: var(--text-primary); font-size: 1.1rem; text-decoration: none; display: block; transition: color 0.3s;">@camilapitrelli</a>
+                                    <div style="font-size: 0.85rem; color: var(--text-muted);">MEGA</div>
+                                </div>
                             </div>
+                            <a href="https://mega.nz/folder/dOhQBa7Z#TWnv3VfrjH1yHFwUSMP-qA" target="_blank" rel="noopener" style="text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 0.5rem; color: var(--color-accent); font-weight: 600; font-size: 0.95rem; padding: 0.6rem; background: rgba(16, 185, 129, 0.1); border-radius: 8px; transition: all 0.3s ease;">
+                                <i class="fas fa-images"></i>
+                                <span>Ver álbum</span>
+                                <i class="fas fa-external-link-alt" style="font-size: 0.8rem;"></i>
+                            </a>
                         </div>
-                        <h3 class="text-white mb-3">Grupo de Difusión WhatsApp</h3>
-                        <p class="text-white mb-4">Recibe notificaciones instantáneas sobre torneos y resultados</p>
-                        <a target="_blank" href="https://chat.whatsapp.com/JkIDQV7TD2vBc4yKpnT82D" class="btn-yellow">
-                            Unirse al Grupo
-                        </a>
+
+                        <!-- @venganzaunder -->
+                        <div style="background: var(--bg-glass); border: 1px solid rgba(16, 185, 129, 0.2); border-radius: 10px; padding: 1.2rem; position: relative; overflow: hidden;">
+                            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 3px; background: linear-gradient(90deg, var(--color-primary), var(--color-accent));"></div>
+                            <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem;">
+                                <i class="fab fa-instagram" style="font-size: 1.8rem; color: #E1306C;"></i>
+                                <div style="flex: 1;">
+                                    <a href="https://instagram.com/venganzaunder" target="_blank" rel="noopener" style="font-weight: 700; color: var(--text-primary); font-size: 1.1rem; text-decoration: none; display: block; transition: color 0.3s;">@venganzaunder</a>
+                                    <div style="font-size: 0.85rem; color: var(--text-muted);">MEGA</div>
+                                </div>
+                            </div>
+                            <a href="https://mega.nz/folder/vp5W3ZLB#pH6OuszifZNc_zp1o9-ruA" target="_blank" rel="noopener" style="text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 0.5rem; color: var(--color-accent); font-weight: 600; font-size: 0.95rem; padding: 0.6rem; background: rgba(16, 185, 129, 0.1); border-radius: 8px; transition: all 0.3s ease;">
+                                <i class="fas fa-images"></i>
+                                <span>Ver álbum</span>
+                                <i class="fas fa-external-link-alt" style="font-size: 0.8rem;"></i>
+                            </a>
+                        </div>
+
+                        <!-- @ph_hernanleyez -->
+                        <div style="background: var(--bg-glass); border: 1px solid rgba(16, 185, 129, 0.2); border-radius: 10px; padding: 1.2rem; position: relative; overflow: hidden;">
+                            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 3px; background: linear-gradient(90deg, var(--color-primary), var(--color-accent));"></div>
+                            <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem;">
+                                <i class="fab fa-instagram" style="font-size: 1.8rem; color: #E1306C;"></i>
+                                <div style="flex: 1;">
+                                    <a href="https://instagram.com/ph_hernanleyez" target="_blank" rel="noopener" style="font-weight: 700; color: var(--text-primary); font-size: 1.1rem; text-decoration: none; display: block; transition: color 0.3s;">@ph_hernanleyez</a>
+                                    <div style="font-size: 0.85rem; color: var(--text-muted);">Google Drive</div>
+                                </div>
+                            </div>
+                            <a href="https://drive.google.com/drive/folders/1pIQUxgdhRzz6p9gUcQi_SkLAQO_oMJuh?usp=sharing" target="_blank" rel="noopener" style="text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 0.5rem; color: var(--color-accent); font-weight: 600; font-size: 0.95rem; padding: 0.6rem; background: rgba(16, 185, 129, 0.1); border-radius: 8px; transition: all 0.3s ease;">
+                                <i class="fas fa-images"></i>
+                                <span>Ver álbum</span>
+                                <i class="fas fa-external-link-alt" style="font-size: 0.8rem;"></i>
+                            </a>
+                        </div>
+
+                        <!-- @visualuv -->
+                        <div style="background: var(--bg-glass); border: 1px solid rgba(16, 185, 129, 0.2); border-radius: 10px; padding: 1.2rem; position: relative; overflow: hidden;">
+                            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 3px; background: linear-gradient(90deg, var(--color-primary), var(--color-accent));"></div>
+                            <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem;">
+                                <i class="fab fa-instagram" style="font-size: 1.8rem; color: #E1306C;"></i>
+                                <div style="flex: 1;">
+                                    <a href="https://instagram.com/visualuv_" target="_blank" rel="noopener" style="font-weight: 700; color: var(--text-primary); font-size: 1.1rem; text-decoration: none; display: block; transition: color 0.3s;">@visualuv_</a>
+                                    <div style="font-size: 0.85rem; color: var(--text-muted);">Google Drive</div>
+                                </div>
+                            </div>
+                            <a href="https://drive.google.com/drive/folders/1cGlWoi7CcDgNxdzN9rceYAQsxDzNu0ze?usp=sharing" target="_blank" rel="noopener" style="text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 0.5rem; color: var(--color-accent); font-weight: 600; font-size: 0.95rem; padding: 0.6rem; background: rgba(16, 185, 129, 0.1); border-radius: 8px; transition: all 0.3s ease;">
+                                <i class="fas fa-images"></i>
+                                <span>Ver álbum</span>
+                                <i class="fas fa-external-link-alt" style="font-size: 0.8rem;"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Modal para detalles de la noticia -->
-    <div class="modal fade" id="newsModal" tabindex="-1" aria-labelledby="newsModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header bg-blue text-white">
-                    <h5 class="modal-title" id="newsModalLabel">Detalles de la Noticia</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body" id="newsDetails">
-                    <!-- Información de la noticia cargada dinámicamente -->
-                </div>
+                <h3 style="color: var(--color-primary); margin: 2rem 0 1rem 0; font-size: 1.4rem;">
+                    <i class="fas fa-heart" style="margin-right: 10px;"></i>Agradecimientos
+                </h3>
+
+                <p style="margin-bottom: 1.5rem;">
+                    Desde la organización solo nos quedan palabras de agradecimiento:
+                </p>
+
+                <ul style="list-style: none; padding: 0; margin-bottom: 1.5rem;">
+                    <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;">
+                        <i class="fas fa-check-circle" style="position: absolute; left: 0; top: 0.3rem; color: var(--color-accent);"></i>
+                        A todos los que confiaron en nosotros y viajaron cientos (y hasta miles) de kilómetros para venir a jugar.
+                    </li>
+                    <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;">
+                        <i class="fas fa-check-circle" style="position: absolute; left: 0; top: 0.3rem; color: var(--color-accent);"></i>
+                        A <strong>Pepe Cuenca</strong>, por su enorme predisposición y cercanía, incluso brindando simultáneas a los jugadores del torneo.
+                    </li>
+                    <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;">
+                        <i class="fas fa-check-circle" style="position: absolute; left: 0; top: 0.3rem; color: var(--color-accent);"></i>
+                        A <strong>Juan Cruz Arias</strong>, por su labor como comentarista
+                    </li>
+                    <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;">
+                        <i class="fas fa-check-circle" style="position: absolute; left: 0; top: 0.3rem; color: var(--color-accent);"></i>
+                        A toda la gente del club, que trabajó incansablemente con las mesas, el buffet y mucho más.
+                    </li>
+                    <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;">
+                        <i class="fas fa-check-circle" style="position: absolute; left: 0; top: 0.3rem; color: var(--color-accent);"></i>
+                        A la <strong>Municipalidad de Lago Puelo</strong>, que nos proveyó la comida para los jugadores.
+                    </li>
+                    <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;">
+                        <i class="fas fa-check-circle" style="position: absolute; left: 0; top: 0.3rem; color: var(--color-accent);"></i>
+                        A la <strong>Federación de ajedrez Chubutense</strong>, que además de participar, aportó con todos los juegos y relojes necesarios.
+                    </li>
+                    <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;">
+                        <i class="fas fa-check-circle" style="position: absolute; left: 0; top: 0.3rem; color: var(--color-accent);"></i>
+                        A <strong>Chubut Deportes</strong> por el respaldo.
+                    </li>
+                    <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;">
+                        <i class="fas fa-check-circle" style="position: absolute; left: 0; top: 0.3rem; color: var(--color-accent);"></i>
+                        A todos nuestros <strong>sponsors</strong>, que hicieron posible esta edición.
+                    </li>
+                    <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;">
+                        <i class="fas fa-check-circle" style="position: absolute; left: 0; top: 0.3rem; color: var(--color-accent);"></i>
+                        Y a los árbitros, que una vez más estuvieron a la altura, con un trabajo impecable.
+                    </li>
+                </ul>
+
+                <p style="text-align: center; font-size: 1.2rem; font-weight: 600; color: var(--color-primary); margin-top: 2rem; padding: 1.5rem; background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(5, 150, 105, 0.05)); border-radius: 10px;">
+                    Gracias por hacer de este torneo algo tan especial. Nos vemos en la próxima edición... ¡y que siga creciendo esta locura hermosa que es el ajedrez en Lago Puelo!
+                </p>
             </div>
         </div>
     </div>
 
-    <!-- Calendar Section -->
-    <section id="calendar" class="py-5 text-center">
+    <!-- Footer -->
+    <footer style="background: var(--bg-primary); border-top: 1px solid var(--border-primary); padding: 2rem 0;">
         <div class="container">
-            <h2 class="text-center mb-2 fade-up">Calendario de Torneos</h2>
-            <p class="lead mb-4 fade-up">Sumate a nuestros eventos!</p>
-    
-            <div class="timeline-list mb-5 fade-up" id="timelineContainer">
-                <!-- Tarjetas generadas con JavaScript -->
+            <div style="text-align: center; color: var(--text-muted); font-size: var(--font-size-sm);">
+                <p style="margin-bottom: 0.5rem; opacity: 0.8;">
+                    Sitio web creado y diseñado por
+                </p>
+                <a href="https://teocicciari.com.ar" target="_blank" rel="noopener" style="color: var(--color-accent); text-decoration: none; font-weight: var(--font-weight-semibold); transition: all var(--transition-base); display: inline-flex; align-items: center; gap: 0.5rem;">
+                    <i class="fas fa-code" style="font-size: 0.9rem;"></i>
+                    Teo Cicciari
+                    <i class="fas fa-external-link-alt" style="font-size: 0.8rem; opacity: 0.7;"></i>
+                </a>
             </div>
-            <button class="btn btn-primary fade-up" id="showMoreBtn">Ver más eventos</button>
         </div>
-    </section>
+    </footer>
 
-    <!-- Sección del Circuito -->
-    <section id="circuit" class="py-5 text-center text-white blue-background">
-        <div class="container">
-            <h2 class="text-center text-white mb-2 fade-up">Circuito de Ajedrez Chubutense</h2>
-            <p class="lead mb-4 fade-up">Un Grand Prix que reúne los torneos más importantes de la provincia</p>
-                    
-            <div class="accordion" id="circuitAccordion">
-                <div class="accordion-item fade-up">
-                    <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button collapsed custom-accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            ¿Cómo funciona?
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#circuitAccordion">
-                        <div class="accordion-body">
-                            <p>El Circuito Chubutense es un sistema de competencia que agrupa diversos torneos a lo largo del año. Los jugadores suman puntos en cada torneo, y los mejores clasificados al final de la temporada reciben premios y reconocimientos.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item fade-up">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed custom-accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            ¿Cómo se suman los puntos?
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#circuitAccordion">
-                        <div class="accordion-body">
-                            <ul class="list-group text-start">
-                                <li class="list-group-item">🥇 1er puesto: 10 puntos</li>
-                                <li class="list-group-item">🥈 2do puesto: 8 puntos</li>
-                                <li class="list-group-item">🥉 3er puesto: 6 puntos</li>
-                                <li class="list-group-item">4° - 10° puesto: 4 puntos</li>
-                                <li class="list-group-item">11° en adelante: 2 puntos</li>
-                                <li class="list-group-item">🏅 Bonus especial: Si participas en todos los torneos, sumas 5 puntos extra.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item fade-up">
-                    <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed custom-accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                            ¿Quién puede participar?
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#circuitAccordion">
-                        <div class="accordion-body">
-                            Para participar del Circuito Chubutense debes estar afiliado/a a un club de la Federación de Ajedrez Chubutense.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item fade-up">
-                    <h2 class="accordion-header" id="headingFour">
-                        <button class="accordion-button collapsed custom-accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseThree">
-                            ¿Cuáles son los premios?
-                        </button>
-                    </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#circuitAccordion">
-                        <div class="accordion-body">
-                            <ul class="list-group text-start">
-                                <li class="list-group-item">🥇 1er puesto: 50% del fondo acumulado</li>
-                                <li class="list-group-item">🥈 2do puesto: 30% del fondo acumulado</li>
-                                <li class="list-group-item">🥉 3er puesto: 20% del fondo acumulado</li>
-                                <li class="list-group-item">🏅 Mejor sub-18: dos inscripciones gratuitas para el circuito 2026</li>
-                                <li class="list-group-item">🏅 Mejor femenina: dos inscripciones gratuitas para el circuito 2026</li>
-                                <li class="list-group-item">🏅 Mejor supra-60: dos inscripciones gratuitas para el circuito 2026</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Modal -->
-    <div class="modal fade" id="inscripcionModal" tabindex="-1" aria-labelledby="inscripcionModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header bg-blue text-white">
-            <h5 class="modal-title" id="inscripcionModalLabel">Inscripción al Circuito Chubutense</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-            <p>¡Gracias por apoyar el ajedrez en Chubut!</p>
-            <p>Para completar la inscripción, sigue estos pasos:</p>
-            <ol>
-                <li>Realiza una transferencia a la siguiente cuenta:</li>
-                <p class="mb-0"><strong>Alias:</strong> fach.2025</p>
-                <p class="mb-0"><strong>CBU:</strong> 0110246030024604685929</p>
-                <p class="mb-3"><strong>Monto:</strong> <i>$3000</i></p>
-                <li class="mb-3">Completa el formulario de inscripción con tus datos y el comprobante de pago:</li>
-                <a href="https://forms.gle/mkqfCzPYUxQgbwv58" target="_blank" class="btn-yellow">Completar formulario</a>
-            </ol>
-            </div>
-        </div>
-        </div>
-    </div>
-
-    <!-- Calendar Section -->
-    <section id="clasificacion" class="py-5 text-center">
-        <div class="container">
-            <!-- Clasificación del Circuito -->
-            <h3 class="text-center fade-up mb-2">Clasificación del Circuito</h3>
-            <p class="lead mb-3 fade-up">Selecciona un jugador para ver más detalles</p>
-            <div class="table-responsive fade-up">
-                <table class="table table-striped table-hover table-bordered mt-3">
-                    <thead class="table-primary">
-                        <tr>
-                            <th>Puesto</th>
-                            <th>Nombre</th>
-                            <th>Puntos</th>
-                        </tr>
-                    </thead>
-                    <tbody id="classificationTable">
-                        <!-- Las filas se generan dinámicamente con JavaScript -->
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </section>
-
-    <!-- Modal para Detalles del Jugador -->
-    <div class="modal fade" id="playerModal" tabindex="-1" aria-labelledby="playerModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header bg-blue text-white">
-                    <h5 class="modal-title" id="playerModalLabel">Detalles del Jugador</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body" id="playerDetails">
-                    <!-- La información del jugador se carga dinámicamente -->
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal para detalles del torneo -->
-    <div class="modal fade" id="tournamentModal" tabindex="-1" aria-labelledby="tournamentModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header bg-blue text-white">
-                    <h5 class="modal-title" id="tournamentModalLabel">Detalles del Torneo</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body" id="tournamentDetails">
-                    <!-- Información del torneo cargada dinámicamente -->
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- About Us Section -->
-    <section id="about-us" class="pt-5 pb-3 blue-background">
-        <div class="container text-white">
-            <h2 class="text-center mb-4 text-white fade-up">Sobre la FACH</h2>
-            <div class="row align-items-center fade-up">
-                <div class="col-md-6 mb-4 mb-md-0">
-                    <img src="img/logos/FACH.png" alt="Sobre Nosotros" class="img-fluid rounded shadow">
-                </div>
-                <div class="col-md-6">
-                    <p class="mb-3">
-                        La <strong>Federación de Ajedrez Chubutense (F.A.CH.)</strong> está dedicada a promover el ajedrez en toda la provincia de Chubut. Organizamos torneos, talleres y eventos destinados a jugadores de todas las edades y niveles, con el objetivo de fomentar el desarrollo de esta disciplina en la comunidad.
-                    </p>
-                    <p class="mb-3">
-                        Fue creado a principios de 2010 por los clubes Capablanca de Trelew, Círculo de Rawson, Peones del Sur de Puerto Madryn y El Mundo del Ajedrez de Comodoro Rivadavia. Posteriormente, se incorporaron los clubes de la cordillera: Esquel y Lago Puelo.
-                    </p>
-                    <p class="mb-3">
-                        De esta manera, quedó conformada por seis clubes, todos ellos con una actividad constante a nivel local, organizando también torneos abiertos que convocan a jugadores de distintas partes del país e incluso del extranjero.
-                    </p>
-                    <p>Únete a nosotros y descubre cómo el ajedrez puede transformar vidas, inspirar mentes y unir comunidades.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init();
-        document.addEventListener("scroll", function() {
-            document.querySelectorAll(".fade-up").forEach(el => {
-                if (el.getBoundingClientRect().top < window.innerHeight - 50) {
-                    el.classList.add("show");
+        // Create animated particles (only on desktop for performance)
+        function createParticles() {
+            if (window.innerWidth <= 768) return; // Skip on mobile
+            
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = window.innerWidth <= 1024 ? 30 : 50; // Fewer particles on tablets
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 6 + 's';
+                particle.style.animationDuration = (Math.random() * 3 + 3) + 's';
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        // Initialize particles when page loads
+        document.addEventListener('DOMContentLoaded', createParticles);
+
+        // Handle window resize for responsive particles
+        let resizeTimeout;
+        window.addEventListener('resize', function() {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(function() {
+                const particlesContainer = document.getElementById('particles');
+                if (window.innerWidth <= 768 && particlesContainer.children.length > 0) {
+                    // Remove particles on mobile
+                    particlesContainer.innerHTML = '';
+                } else if (window.innerWidth > 768 && particlesContainer.children.length === 0) {
+                    // Add particles back on desktop
+                    createParticles();
+                }
+            }, 250);
+        });
+
+        // Optimize images loading
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add loading="lazy" to images for better performance
+            const images = document.querySelectorAll('img');
+            images.forEach(img => {
+                img.setAttribute('loading', 'lazy');
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
                 }
             });
         });
+
+        // Add performance optimization for touch devices
+        if ('ontouchstart' in window) {
+            // Disable hover effects on touch devices by adding a class
+            document.body.classList.add('touch-device');
+        }
     </script>
-
-    <script src="cargarSponsors.js"></script>
-    <script src="cargarNoticias.js"></script>
-    <script src="cargarCalendar.js"></script>
-    <script src="cargarClasifCircuito.js"></script>  
-    <script src="main.js"></script>
-
 </body>
 </html>
