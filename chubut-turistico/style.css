@@ -1,7 +1,7 @@
 :root {
     --primary-color: #024887;
     --secondary-color: #0d5ab9;
-    --accent-gold: #FFD700;
+    --accent-gold: #00BCD4;
     --accent-silver: #C0C0C0;
     --accent-bronze: #CD7F32;
     --text-dark: #1a1a1a;
@@ -74,9 +74,8 @@ body {
 }
 
 .btn-tournament:hover {
-    background: #FFC700;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+    background: #00ACC1;
+    box-shadow: 0 4px 15px rgba(0, 188, 212, 0.4);
 }
 
 /* Hero Section */
@@ -167,10 +166,31 @@ body {
     flex-direction: column;
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(10px);
-    border: 2px solid rgba(255, 255, 255, 0.3);
+    border: 3px solid rgba(0, 188, 212, 0.5);
     border-radius: 20px;
     padding: 2rem 3rem;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.2),
+        0 0 40px rgba(0, 188, 212, 0.3),
+        inset 0 0 20px rgba(0, 188, 212, 0.1);
+    animation: pulse-border 3s ease-in-out infinite;
+}
+
+@keyframes pulse-border {
+    0%, 100% {
+        border-color: rgba(0, 188, 212, 0.5);
+        box-shadow:
+            0 8px 32px rgba(0, 0, 0, 0.2),
+            0 0 40px rgba(0, 188, 212, 0.3),
+            inset 0 0 20px rgba(0, 188, 212, 0.1);
+    }
+    50% {
+        border-color: rgba(0, 188, 212, 0.8);
+        box-shadow:
+            0 8px 32px rgba(0, 0, 0, 0.2),
+            0 0 60px rgba(0, 188, 212, 0.5),
+            inset 0 0 30px rgba(0, 188, 212, 0.2);
+    }
 }
 
 .prize-label {
@@ -182,15 +202,35 @@ body {
 }
 
 .prize-amount {
-    font-size: 3rem;
-    font-weight: 700;
+    font-size: 3.5rem;
+    font-weight: 900;
     color: var(--accent-gold);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-shadow:
+        0 0 20px rgba(0, 188, 212, 0.8),
+        0 0 40px rgba(0, 188, 212, 0.5),
+        2px 2px 8px rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow:
+            0 0 20px rgba(0, 188, 212, 0.8),
+            0 0 40px rgba(0, 188, 212, 0.5),
+            2px 2px 8px rgba(0, 0, 0, 0.5);
+    }
+    to {
+        text-shadow:
+            0 0 30px rgba(0, 188, 212, 1),
+            0 0 60px rgba(0, 188, 212, 0.7),
+            2px 2px 8px rgba(0, 0, 0, 0.5);
+    }
 }
 
 .btn-tournament-primary {
     background: var(--accent-gold);
-    color: var(--text-dark);
+    color: white;
     border: none;
     padding: 1rem 2.5rem;
     border-radius: 50px;
@@ -198,14 +238,13 @@ body {
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 188, 212, 0.3);
 }
 
 .btn-tournament-primary:hover {
-    background: #FFC700;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 25px rgba(255, 215, 0, 0.5);
-    color: var(--text-dark);
+    background: #00ACC1;
+    box-shadow: 0 6px 25px rgba(0, 188, 212, 0.5);
+    color: white;
 }
 
 .btn-tournament-secondary {
@@ -223,7 +262,6 @@ body {
 .btn-tournament-secondary:hover {
     background: white;
     color: var(--primary-color);
-    transform: translateY(-3px);
 }
 
 /* Quick Links */
@@ -403,25 +441,33 @@ body {
     font-size: 2.5rem;
     font-weight: 800;
     color: var(--accent-gold);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    text-shadow: 2px 2px 8px rgba(0, 188, 212, 0.4);
+    background: linear-gradient(135deg, var(--accent-gold) 0%, #0097A7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .prize-amount-main {
     font-size: 2rem;
     font-weight: 800;
-    color: var(--primary-color);
+    color: var(--accent-gold);
+    text-shadow: 2px 2px 8px rgba(0, 188, 212, 0.3);
 }
 
 .prize-gold {
     border-top: 5px solid var(--accent-gold);
+    box-shadow: 0 -2px 15px rgba(0, 188, 212, 0.3);
 }
 
 .prize-silver {
     border-top: 5px solid var(--accent-silver);
+    box-shadow: 0 -2px 15px rgba(192, 192, 192, 0.3);
 }
 
 .prize-bronze {
     border-top: 5px solid var(--accent-bronze);
+    box-shadow: 0 -2px 15px rgba(205, 127, 50, 0.3);
 }
 
 .prize-card-small {
@@ -444,9 +490,10 @@ body {
 }
 
 .prize-card-small .prize-amount {
-    color: var(--primary-color);
-    font-weight: 700;
-    font-size: 1.3rem;
+    color: var(--accent-gold);
+    font-weight: 800;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 4px rgba(0, 188, 212, 0.2);
 }
 
 .special-prize-card {
@@ -482,9 +529,10 @@ body {
 }
 
 .special-prize-card .prize-amount {
-    color: var(--primary-color);
-    font-weight: 700;
-    font-size: 1.2rem;
+    color: var(--accent-gold);
+    font-weight: 800;
+    font-size: 1.4rem;
+    text-shadow: 1px 1px 4px rgba(0, 188, 212, 0.2);
 }
 
 /* Cronograma Section */
