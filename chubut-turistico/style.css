@@ -4,6 +4,7 @@
     --accent-gold: #00BCD4;
     --accent-silver: #C0C0C0;
     --accent-bronze: #CD7F32;
+    --prize-gold: #FFB800;
     --text-dark: #1a1a1a;
     --text-light: #f8f9fa;
     --gradient-primary: linear-gradient(135deg, #024887 0%, #0d5ab9 100%);
@@ -205,27 +206,7 @@ body {
     font-size: 3.5rem;
     font-weight: 900;
     color: var(--accent-gold);
-    text-shadow:
-        0 0 20px rgba(0, 188, 212, 0.8),
-        0 0 40px rgba(0, 188, 212, 0.5),
-        2px 2px 8px rgba(0, 0, 0, 0.5);
     letter-spacing: 2px;
-    animation: glow 2s ease-in-out infinite alternate;
-}
-
-@keyframes glow {
-    from {
-        text-shadow:
-            0 0 20px rgba(0, 188, 212, 0.8),
-            0 0 40px rgba(0, 188, 212, 0.5),
-            2px 2px 8px rgba(0, 0, 0, 0.5);
-    }
-    to {
-        text-shadow:
-            0 0 30px rgba(0, 188, 212, 1),
-            0 0 60px rgba(0, 188, 212, 0.7),
-            2px 2px 8px rgba(0, 0, 0, 0.5);
-    }
 }
 
 .btn-tournament-primary {
@@ -437,12 +418,18 @@ body {
     margin-bottom: 1rem;
 }
 
+.prize-card .prize-amount {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--prize-gold);
+    line-height: 1.2;
+}
+
 .prize-usd {
     font-size: 2.5rem;
     font-weight: 800;
-    color: var(--accent-gold);
-    text-shadow: 2px 2px 8px rgba(0, 188, 212, 0.4);
-    background: linear-gradient(135deg, var(--accent-gold) 0%, #0097A7 100%);
+    color: var(--prize-gold);
+    background: linear-gradient(135deg, #FFB800 0%, #FFA000 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -451,13 +438,12 @@ body {
 .prize-amount-main {
     font-size: 2rem;
     font-weight: 800;
-    color: var(--accent-gold);
-    text-shadow: 2px 2px 8px rgba(0, 188, 212, 0.3);
+    color: var(--prize-gold);
 }
 
 .prize-gold {
-    border-top: 5px solid var(--accent-gold);
-    box-shadow: 0 -2px 15px rgba(0, 188, 212, 0.3);
+    border-top: 5px solid var(--prize-gold);
+    box-shadow: 0 -2px 15px rgba(255, 184, 0, 0.4);
 }
 
 .prize-silver {
@@ -490,10 +476,9 @@ body {
 }
 
 .prize-card-small .prize-amount {
-    color: var(--accent-gold);
+    color: var(--prize-gold);
     font-weight: 800;
     font-size: 1.5rem;
-    text-shadow: 1px 1px 4px rgba(0, 188, 212, 0.2);
 }
 
 .special-prize-card {
@@ -529,10 +514,9 @@ body {
 }
 
 .special-prize-card .prize-amount {
-    color: var(--accent-gold);
+    color: var(--prize-gold);
     font-weight: 800;
     font-size: 1.4rem;
-    text-shadow: 1px 1px 4px rgba(0, 188, 212, 0.2);
 }
 
 /* Cronograma Section */
